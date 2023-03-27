@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import {loadData} from './api/article';
 
 const LOAD_MORE_STEP = 4;
@@ -7,14 +8,14 @@ export default function Blog({articles, total}) {
     return (
       <div>
         <h1>Blog</h1>
-        <h2>Nombre total d`articles: {total}</h2>
-        {articles.map((article) => {
+        <h2>Nombre total d'articles: {total}</h2>
+        {articles.map((article) => (
             <div key={article._id}>
               <h2>{article.Title}</h2>
               <h3>{article.Author}</h3>
               <p>{article.description}</p>
             </div>
-          })
+        ))
         }
       </div> 
         )
