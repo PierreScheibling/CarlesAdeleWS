@@ -11,7 +11,6 @@ export async function loadData(start, end) {
   }`;
 
   const { articles, total } = await client.fetch(query);
-
   return {
     articles,
     total
