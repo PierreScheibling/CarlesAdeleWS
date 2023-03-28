@@ -6,26 +6,23 @@ export default function Nav() {
     return (
         <NavStyles>
             <Logo>
-                <h1>LOGO</h1>
+                <Link href={"/"}>
+                    <h1>LOGO</h1>
+                </Link>
             </Logo>
             <ul>
                 <li>
-                    <Link href={"/"}>
-                        ACCUEIL
-                    </Link>
-                </li>
-                <li>
-                    <Link href={"/"}>
+                    <Link href={"/presentation"}>
                         PRESENTATION
                     </Link>
                 </li>
                 <li>
-                    <Link href={"/"}>
+                    <Link href={"/expertise"}>
                         EXPERTISE
                     </Link>
                 </li>
                 <li>
-                    <Link href={"/"}>
+                    <Link href={"/honoraires"}>
                         HONORAIRES
                     </Link>
                 </li>
@@ -35,7 +32,7 @@ export default function Nav() {
                     </Link>
                 </li>
                 <li>
-                    <Link href={"/"}>
+                    <Link href={"/contact"}>
                         CONTACT
                     </Link>
                 </li>

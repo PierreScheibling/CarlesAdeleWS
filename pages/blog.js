@@ -1,7 +1,8 @@
 /* eslint-disable react/no-unescaped-entities */
 import {loadData, urlFor} from './api/article';
 //Style
-import {BlogWrapper, ArticleWrapper} from '../styles/blogStyle'
+import {BlogWrapper, ArticleWrapper} from '../styles/blogStyles';
+import {Title} from "../styles/indexStyles";
 
 const LOAD_MORE_STEP = 4;
 
@@ -9,8 +10,9 @@ export default function Blog({articles, total}) {
   console.log(articles);
     return (
       <BlogWrapper>
-        <h1>Blog</h1>
-        
+        <Title>
+          <h1>Blog</h1>
+        </Title>
         <h2>Nombre total d'articles: {total}</h2>
         {articles.map((article) => (
           <div key={article._id}>

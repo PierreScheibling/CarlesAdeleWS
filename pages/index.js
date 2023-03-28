@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Link from 'next/link';
+import { Title, IndexWrapper } from "../styles/indexStyles";
 
 export default function Home() {
   return (
@@ -11,7 +12,11 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <h1>Hello you</h1>
+        <IndexWrapper>
+          <Title>
+            <h1>Hello you</h1>
+          </Title>
+        </IndexWrapper>
       </main>
     </>
   )
