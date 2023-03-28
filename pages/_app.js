@@ -1,13 +1,14 @@
 import '@/styles/globals.css'
 import Nav from './components/nav';
 import Footer from './components/footer';
+import { AnimatePresence } from 'framer-motion';
 
-export default function App({ Component, pageProps }) {
+export default function App({ Component, pageProps, router }) {
   return (
-      <div>
+      <AnimatePresence>
         <Nav />
-        <Component {...pageProps} />
+        <Component key={router.pathname} {...pageProps} />
         <Footer />
-      </div>
+      </AnimatePresence>
   )
 }
