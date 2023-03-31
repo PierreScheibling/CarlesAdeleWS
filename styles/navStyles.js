@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const NavStyles = styled.div`
+    z-index: 10;
     min-height: 15vh;
     width: 100%;
     flex-direction: row;
@@ -9,28 +10,23 @@ export const NavStyles = styled.div`
     justify-content: center;
     position: relative;
     list-style: none;
+    font-family: "Versailles";
     ul {
         width: 80%;
         display: flex;
         justify-content: space-between;
         list-style: none;
         font-size: clamp(0.4rem, 2.5vh, 12rem);
-        color: var(--primary);
+        color: var(--greyblue);
     }
 `;
 
 export const Logo = styled.div`
-    position: absolute;
-    left: -5%;
-`;
-
-export const Reseau = styled.div`
-    position: absolute;
-    right: -3%;
-    ul {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        align-items: flex-end;
+position: absolute;
+left: 0;
+height:100%; 
+    img {
+        width: 100%;
+        height: 15vh;
     }
 `;

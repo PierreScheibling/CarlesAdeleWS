@@ -1,16 +1,22 @@
 import Link from "next/link";
-import { NavStyles, Logo, Reseau } from "../../styles/navStyles";
+import { NavStyles, Logo } from "../../styles/navStyles";
 import Image from 'next/image';
+import logonav from "../../public/images/LogoAC.png";
 
 export default function Nav() {
     return (
         <NavStyles>
             <Logo>
                 <Link href={"/"}>
-                    <h1>LOGO</h1>
+                    <Image src={logonav} alt="logo" />
                 </Link>
             </Logo>
             <ul>
+                <li>
+                    <Link href={"/missions"}>
+                        ACCUEIL
+                    </Link>
+                </li>
                 <li>
                     <Link href={"/presentation"}>
                         PRESENTATION
@@ -18,7 +24,12 @@ export default function Nav() {
                 </li>
                 <li>
                     <Link href={"/expertise"}>
-                        EXPERTISE
+                        EXPERTISES
+                    </Link>
+                </li>
+                <li>
+                    <Link href={"/blog"}>
+                        ACTUALITÉS
                     </Link>
                 </li>
                 <li>
@@ -27,23 +38,11 @@ export default function Nav() {
                     </Link>
                 </li>
                 <li>
-                    <Link href={"/blog"}>
-                        ARTICLES
-                    </Link>
-                </li>
-                <li>
                     <Link href={"/contact"}>
                         CONTACT
                     </Link>
                 </li>
             </ul>
-            <Reseau>
-                <ul>
-                    <li>1</li>
-                    <li>2</li>
-                    <li>3</li>
-                </ul>
-            </Reseau>
         </NavStyles>
     )
 }

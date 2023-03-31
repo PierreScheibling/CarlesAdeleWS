@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const FooterStyles = styled.div`
+    z-index: 10;
     display: flex;
     flex-direction: column;
     justify-content: center;

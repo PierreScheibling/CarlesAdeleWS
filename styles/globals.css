@@ -1,9 +1,10 @@
 html,
 body {
-  margin: 0rem 3%;
-  background: #f1f1f1;
-  --primary: #2d2d2d;
-  --secondary: #535353;
+  margin: 0rem;
+  --grey: #66778F;
+  --greyblue: #535D6B;
+  --black: #111B1E;
+  --bluelight: #8cc6cd;
 }
 
 * {
@@ -19,17 +20,14 @@ a {
 
 h1 {
   font-size: clamp(0.5rem, 5vh, 15rem);
-  color: var(--primary);
 }
 
 h2 {
   font-size: clamp(0.4rem, 2.5vh, 12rem);
-  color: var(--primary);
 }
 
 h3 {
   font-size: clamp(0.3rem, 2vh, 10rem);
-  color: var(--secondary);
 }
 
 p {
@@ -37,3 +35,46 @@ p {
   line-height: 150%;
   text-align: justify;
 }
+
+@font-face {
+  font-family: "Versailles";
+  src: url("../fonts/Versailles.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "RoxboroughCF";
+  src: url("../fonts/Roxborough_CF.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TTDrugs";
+  src: url("../fonts/TTDrugs-Light.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins_light";
+  src: url("../fonts/Poppins-Light.ttf");
+  font-weight: lighter;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins_medium";
+  src: url("../fonts/Poppins-Medium.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Arimo";
+  src: url("../fonts/Arimo-VariableFont_wght.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
