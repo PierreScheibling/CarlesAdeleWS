@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const IndexWrapper = styled.div`
-    min-height: 85vh;
+    min-height: 83vh;
     display: flex;
     flex-direction: column;
     align-items: center;

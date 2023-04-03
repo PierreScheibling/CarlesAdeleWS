@@ -7,6 +7,16 @@ export const FooterStyles = styled.div`
     justify-content: center;
     align-items: center;
     padding: 1rem 0;
+    position: relative;
+    font-family: "Poppins_light";
+`;
+
+export const Line = styled.div`
+    position: absolute;
+    top: 0;
+    height: 0.1rem;
+    width: 80%;
+    background: var(--bluelight);
 `;
 
 export const Annexes = styled.div`

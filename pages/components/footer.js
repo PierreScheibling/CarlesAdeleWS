@@ -1,9 +1,10 @@
 import Link from "next/link";
-import { FooterStyles, Annexes, Copywright } from "../../styles/footerStyles";
+import { FooterStyles, Line, Annexes, Copywright } from "../../styles/footerStyles";
 
 export default function Footer() {
     return (
         <FooterStyles>
+            <Line/>
             <Annexes>
                 <h3>
                     <Link href={"/mentions_legales"}>Mentions légales</Link> / <Link href={"/confidentialite"}>Politique de confidentialité</Link>

@@ -23,7 +23,7 @@ export const LeftSide = styled.div`
     justify-content: center;
     align-items: flex-start;
     width: 50%;
-    height: 85vh;
+    min-height: 85vh;
     h1 {
         margin-top: 1rem;
         font-family: "RoxboroughCF";
@@ -40,7 +40,7 @@ export const RightSide = styled.div`
     justify-content: flex-start;
     align-items: flex-start;
     width: 50%;
-    height: 85vh;
+    min-height: 85vh;
     padding: 0 4rem;
     margin-top: 1rem;
     div {
