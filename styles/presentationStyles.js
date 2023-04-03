@@ -26,16 +26,18 @@ export const PresentationContent = styled.div`
 `;
 
 export const LeftSide = styled.div`
+  min-height: 85vh;
   margin-top: -15vh;
   width: 50%;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-`;
-export const ImageWrapper = styled.div`
-  width: 40%;
-  height: 50%;
-  background-color: red;
+  .photoAdCl {
+        width: 40%;
+        height: 65vh;
+        object-fit: cover;
+        opacity: 0.8;
+    }
 `;
 
 export const Name = styled.div`
@@ -45,8 +47,8 @@ export const Name = styled.div`
   h1 {
     font-family: "RoxboroughCF";
     font-weight: lighter;
-    font-size: clamp(1.5rem,  7vw, 10rem);
-    color: #535D6B;
+    font-size: clamp(1.5rem,  6vw, 10rem);
+    color: var(--grey);
   }
 `;
 
@@ -58,6 +60,6 @@ export const RightSide = styled.div`
         font-size: clamp(0.3rem, 2vh, 8rem);
         font-family: "Poppins_light";
         margin: 1.5rem 0;
-        color: var(--greyblue);
+        color: var(--grey);
     }
 `;

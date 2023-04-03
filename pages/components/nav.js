@@ -8,7 +8,7 @@ export default function Nav() {
         <NavStyles>
             <Logo>
                 <Link href={"/"}>
-                    <Image src={logonav} alt="logo" />
+                    <Image className="imgNav" src={logonav} alt="logo" />
                 </Link>
             </Logo>
             <ul>

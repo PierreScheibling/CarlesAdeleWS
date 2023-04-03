@@ -1,12 +1,9 @@
-import { Title } from "../styles/indexStyles.js";
 import { MentionWrapper, Text, Section } from "../styles/mentionStyles.js";
 
 export default function Mention() {
     return (
         <MentionWrapper>
-            <Title>
                 <h1>Mentions Légales</h1>
-            </Title>
             <Text>
                 <Section>
                     <h2>1 – Édition du site</h2>

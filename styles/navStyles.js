@@ -22,11 +22,12 @@ export const NavStyles = styled.div`
 `;
 
 export const Logo = styled.div`
-position: absolute;
-left: 0;
-height:100%; 
-    img {
-        width: 100%;
-        height: 15vh;
-    }
+    position: absolute;
+    left: 0;
+    height: 100%; 
+    .imgNav{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
 `;

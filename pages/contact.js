@@ -1,4 +1,3 @@
-import {Title} from "../styles/indexStyles";
 import {FormWrapper, FormContainer, Form} from "../styles/contactStyles";
 import Image from "next/image";
 import { env } from 'process';
@@ -25,9 +24,7 @@ export default function Contact() {
 
     return (
         <m.FormWrapper initial={{opacity:0}} animate={{opacity:1}} exit={{opacity: 0}}>
-            <Title>
                 <h1>Contact</h1>
-            </Title>
             <FormContainer>
                 <div>
                     <h1>Lets get started</h1>

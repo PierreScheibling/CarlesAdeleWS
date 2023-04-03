@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import Link from 'next/link';
-import { Logo, IndexWrapper, Text } from "../styles/indexStyles";
+import { IndexWrapper, Text } from "../styles/indexStyles";
 import Image from 'next/image';
 import logoind from "../public/images/LogoAC.png"
 
@@ -15,12 +15,10 @@ export default function Home() {
       </Head>
       <main>
         <IndexWrapper>
-          <Link href={"/missions"}>
-            <Logo>
-              <Image src={logoind} alt="logo" width={500}/>
-            </Logo>
+          <Link className="linkInd" href={"/missions"}>
+            <Image className="imgInd" src={logoind} alt="logo" />
           </Link>
-          <Text>
+          <Text className="textInd">
             <h1>AVOCAT AU BARREAU DE BORDEAUX</h1>
           </Text>
         </IndexWrapper>

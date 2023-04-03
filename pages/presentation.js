@@ -1,4 +1,6 @@
-import {PresentationWrapper,PresentationContent, LeftSide, RightSide, Name, ImageWrapper} from "../styles/presentationStyles";
+import Image from 'next/image';
+import photoAd from "../public/images/Photo.png";
+import {PresentationWrapper,PresentationContent, LeftSide, RightSide, Name} from "../styles/presentationStyles";
 
 export default function Presentation() {
     return (
@@ -10,7 +12,7 @@ export default function Presentation() {
                         <h1>Adèle</h1>
                         <h1>Carles</h1>
                     </Name>
-                    <ImageWrapper />
+                    <Image className="photoAdCl" src={photoAd} alt="photo-adèle"/>
                 </LeftSide>
                 <RightSide>
                     <p>Maître Adèle Carles est avocate au barreau de Bordeaux et fondatrice du Cabinet.</p>
