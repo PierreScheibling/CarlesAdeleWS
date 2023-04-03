@@ -28,7 +28,7 @@ export default function Nav() {
                     </Link>
                 </li>
                 <li>
-                    <Link href={"/blog"}>
+                    <Link href={"/actualites"}>
                         ACTUALITÉS
                     </Link>
                 </li>

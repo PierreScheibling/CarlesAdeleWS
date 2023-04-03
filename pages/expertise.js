@@ -18,10 +18,10 @@ export default function Expertise() {
                     <Text>
                         <h2>FISCALITÉ</h2>
                         <Link href={"/fiscalitepart"}>
-                            <p>FISCALITE DES PARTICULIERS</p>
+                            <p>FISCALITÉ DES PARTICULIERS</p>
                         </Link>
                         <Link href={"/fiscalitesoc"}>
-                            <p>FISCALITE DES SOCIETES</p>
+                            <p>FISCALITÉ DES SOCIÉTÉS</p>
                         </Link>
                     </Text>
                 </Section>
@@ -29,8 +29,12 @@ export default function Expertise() {
                     <Image className="imgSection" src={imgAff} />
                     <Text>
                         <h2>DROIT DES AFFAIRES</h2>
-                        <p>DROIT DES SOCIETES</p>
-                        <p>DROIT COMMERCIAL</p>
+                        <Link href={"/drsoc"}>
+                            <p>DROIT DES SOCIÉTÉS</p>
+                        </Link>
+                        <Link href={"/drsoc"}>
+                            <p>DROIT COMMERCIAL</p>
+                        </Link>
                     </Text>
                 </Section>
             </RightSide>
