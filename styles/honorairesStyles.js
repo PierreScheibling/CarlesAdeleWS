@@ -11,7 +11,7 @@ export const HonorairesWrapper = styled.div`
 export const BackgroundHono = styled.div`
     z-index: -1;
     position: absolute;
-    top: -15vh;
+    top: 0;
     right: 0;
     width: 50%;
     min-height: 100vh;

@@ -7,7 +7,7 @@ export default function App({ Component, pageProps, router }) {
   return (
       <AnimatePresence>
         <Nav />
-        <Component key={router.pathname} {...pageProps} />
+        <Component key={router.pathname} {...pageProps}/>
         <Footer />
       </AnimatePresence>
   )

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import {motion} from "framer-motion";
 
 export const MissionsWrapper = styled.div`
     min-height: 85vh;
@@ -9,7 +10,7 @@ export const MissionsWrapper = styled.div`
     
 `;
 
-export const LeftSide = styled.div`
+export const LeftSide = styled(motion.div)`
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,7 +39,7 @@ export const Subtext = styled.div`
     }
 `;
 
-export const RightSide = styled.div`
+export const RightSide = styled(motion.div)`
     display: flex;
     flex-direction: column;
     justify-content: center;

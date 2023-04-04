@@ -10,6 +10,11 @@ export const MentionWrapper = styled.div`
         font-weight: lighter;
         color: var(--grey);
     }
+    h2 {
+        font-family: "RoxboroughCF";
+        font-weight: lighter;
+        color: var(--grey);
+    }
     li {
         list-style: none;
     }
@@ -28,6 +33,11 @@ export const Section = styled.div`
     }
     p {
         margin: 0.5rem 0;
+    }
+    span{
+        font-weight: bolder;
+        color: var(--black);
+        font-style: italic;
     }
 `;
 
