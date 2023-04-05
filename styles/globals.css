@@ -78,3 +78,8 @@ p {
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Casanova";
+  src: url("../fonts/Casanova.ttf");
+}
+

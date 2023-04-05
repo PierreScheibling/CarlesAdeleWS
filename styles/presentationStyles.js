@@ -1,6 +1,7 @@
 import styled from "styled-components";
+import {motion} from "framer-motion";
 
-export const PresentationWrapper = styled.div`
+export const PresentationWrapper = styled(motion.div)`
     height: 100%;
     width: 100%;
     position: absolute;
@@ -18,14 +19,14 @@ export const PresentationWrapper = styled.div`
   z-index: -1;
 `;
 
-export const PresentationContent = styled.div`
+export const PresentationContent = styled(motion.div)`
     min-height: 85vh;
     display: flex;
     justify-content: center;
     align-items: center;
 `;
 
-export const LeftSide = styled.div`
+export const LeftSide = styled(motion.div)`
   min-height: 85vh;
   margin-top: -15vh;
   width: 50%;
@@ -40,7 +41,7 @@ export const LeftSide = styled.div`
     }
 `;
 
-export const Name = styled.div`
+export const Name = styled(motion.div)`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -52,7 +53,7 @@ export const Name = styled.div`
   }
 `;
 
-export const RightSide = styled.div`
+export const RightSide = styled(motion.div)`
     width: 50%;
     margin-top: -15vh;
     padding: 0 4rem;

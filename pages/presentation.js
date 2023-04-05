@@ -14,12 +14,11 @@ export default function Presentation() {
             animate="show"
             >
             <PresentationContent>
-                <LeftSide>
+                <LeftSide initial={{ opacity: 0 }}
+                animate={{ opacity:1, transition: { delay: 0.5, duration: 1.5 } }}>
                     <Name>
-                        <motion.h1 initial={{ y:"-300", opacity: 0 }}
-                animate={{ y:0, opacity: 1, transition: { duration: 1 } }}>Adèle</motion.h1>
-                        <motion.h1 initial={{ y:"300", opacity: 0 }}
-                animate={{ y:0, opacity: 1, transition: { duration: 1 } }}>Carles</motion.h1>
+                        <h1>Adèle</h1>
+                        <h1>Carles</h1>
                     </Name>
                     <Image className="photoAdCl" src={photoAd} alt="photo-adèle"/>
                 </LeftSide>
@@ -42,7 +41,8 @@ export default function Presentation() {
                 </RightSide>
             </PresentationContent>
             </motion.div>
-            <PresentationWrapper />
+            <PresentationWrapper initial={{ opacity: 0 }}
+                animate={{ opacity:1, transition: { duration: 0.5 } }}/>
         </>
     )
 }

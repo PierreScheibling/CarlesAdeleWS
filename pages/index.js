@@ -1,10 +1,10 @@
 import Head from 'next/head';
 import Link from 'next/link';
-import { IndexWrapper, Text } from "../styles/indexStyles";
+import { IndexWrapper, Text, Letters, LetterA, LetterC, Line1, Line2 } from "../styles/indexStyles";
 import Image from 'next/image';
 import logoind from "../public/images/LogoAC.png";
 import { motion } from 'framer-motion';
-import {pageAnimation} from "../styles/animations";
+import {pageAnimation, letterA, letterC, avocatAnim, avocat2Anim, lineIndex} from "../styles/animations";
 
 export default function Home() {
   return (
@@ -24,11 +24,18 @@ export default function Home() {
         <main>
           <IndexWrapper>
             <Link className="linkInd" href={"/missions"}>
-              <Image className="imgInd" src={logoind} alt="logo" />
+              <Letters>
+                <LetterA variants={letterA}>A</LetterA>
+                <LetterC variants={letterC}>C</LetterC>
+                <motion.h1 variants={avocatAnim}>AVOCAT</motion.h1>
+              </Letters>
+              {/* <Image className="imgInd" src={logoind} alt="logo" /> */}
             </Link>
             <Text className="textInd">
-              <h1>AVOCAT AU BARREAU DE BORDEAUX</h1>
+              <motion.h1 variants={avocat2Anim}>AVOCAT AU BARREAU DE BORDEAUX</motion.h1>
             </Text>
+            <Line1 variants={lineIndex}/>
+            <Line2 variants={lineIndex}/>
           </IndexWrapper>
         </main>
       </motion.div>

@@ -1,4 +1,4 @@
-import { MissionsWrapper, LeftSide, RightSide, Subtext } from "../styles/missionsStyles";
+import { MissionsWrapper, MissionsBackground, LeftSide, RightSide, Subtext } from "../styles/missionsStyles";
 import { motion } from 'framer-motion';
 import {pageAnimation, titleAnim} from "../styles/animations";
 
@@ -36,6 +36,8 @@ export default function Missions() {
                 animate={{ opacity: 1, scale: 1, transition: { delay: 1.4, duration: 0.5 } }}>Grace à une palette large de compétences, le Cabinet mettra en œuvre une stratégie juridique et fiscale en parfaite cohérence avec vos besoins.</motion.p>
                 </RightSide>
             </MissionsWrapper>
+            <MissionsBackground initial={{ opacity: 0 }}
+                animate={{ opacity:1, transition: { duration: 1 } }}/>
             </motion.div>
         </>
     )

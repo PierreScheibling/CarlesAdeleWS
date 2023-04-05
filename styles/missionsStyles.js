@@ -1,14 +1,21 @@
 import styled from "styled-components";
 import {motion} from "framer-motion";
 
-export const MissionsWrapper = styled.div`
+export const MissionsWrapper = styled(motion.div)`
     min-height: 85vh;
     padding: 0 3%; 
     width: 100%;
-    background-color: rgba(140, 198, 205, 0.2);
     display: flex;
-    
 `;
+
+export const MissionsBackground = styled(motion.div)`
+    position: absolute;
+    top: 15vh;
+    height: 85vh;
+    width: 100%;
+    background-color: rgba(140, 198, 205, 0.2);
+`;
+
 
 export const LeftSide = styled(motion.div)`
     display: flex;

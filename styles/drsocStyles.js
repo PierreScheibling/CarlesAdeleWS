@@ -1,6 +1,7 @@
 import styled from "styled-components";
+import {motion} from "framer-motion";
 
-export const FiscaPartWrapper = styled.div`
+export const FiscaPartWrapper = styled(motion.div)`
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -9,7 +10,7 @@ export const FiscaPartWrapper = styled.div`
     position: relative;
 `;
 
-export const UpperBack = styled.div`
+export const UpperBack = styled(motion.div)`
     height: 15vh;
     width: 100%;
     background-color: rgba(140, 198, 205, 0.2);  
@@ -17,7 +18,7 @@ export const UpperBack = styled.div`
     top: -15vh;
 `;
 
-export const SectionFiscaPart = styled.div`
+export const SectionFiscaPart = styled(motion.div)`
     display: flex;
     justify-content: center;
     /* align-items: center; */
@@ -25,7 +26,7 @@ export const SectionFiscaPart = styled.div`
     width: 95%;
 `;
 
-export const UpperLine = styled.div`
+export const UpperLine = styled(motion.div)`
     height: 0.05rem;
     background: var(--bluelight);
     width: 85%;
@@ -33,7 +34,7 @@ export const UpperLine = styled.div`
     top: -4%;
 `;
 
-export const SSFiscaPart = styled.div`
+export const SSFiscaPart = styled(motion.div)`
     display: flex;
     flex-direction: column;
     justify-content: flex-start;    
@@ -65,13 +66,13 @@ export const SSFiscaPart = styled.div`
     }
 `;
 
-export const Underlign = styled.div`
+export const Underlign = styled(motion.div)`
     height: 1px;
     background: var(--bluelight);
     width: 12%;
 `;
 
-export const Line = styled.div`
+export const Line = styled(motion.div)`
     margin: 2rem 3rem 0 3rem;
     height: 65vh;
     background: black;

@@ -1,7 +1,16 @@
 import {FiscaPartWrapper, SectionFiscaPart, BottomFiscaPart, SSFiscaPart, UpperLine, Line, Underlign} from "../styles/fiscalitepartStyles";
+import { motion } from 'framer-motion';
+import {pageAnimation, fiscaTextAnim, fiscabackAnim} from "../styles/animations";
 
 export default function FiscalitePart() {
     return (
+        <>
+            <motion.div
+            variants={pageAnimation}
+            exit="exit"
+            initial="hidden"
+            animate="show"
+            >
         <FiscaPartWrapper>
             <SectionFiscaPart>
                 <UpperLine />
@@ -81,9 +90,11 @@ export default function FiscalitePart() {
                 </SSFiscaPart>
             </SectionFiscaPart>
             <BottomFiscaPart>
-                <h1>FISCALITÉ DES PARTICULIERS</h1>
-                <div/>
+                <motion.h1 variants={fiscaTextAnim}>FISCALITÉ DES PARTICULIERS</motion.h1>
+                <motion.div variants={fiscabackAnim}/>
             </BottomFiscaPart>
         </FiscaPartWrapper>
+        </motion.div>
+        </>
     )
 };

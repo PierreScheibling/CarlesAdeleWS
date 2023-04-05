@@ -29,6 +29,14 @@ export const Title = styled(motion.div)`
         font-size: clamp(0.5rem, 7vh, 15rem);
     }
 `;
+export const TitleLine = styled(motion.div)`
+    z-index: -1;
+    height: 4vh;
+    width: 33%;
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(140, 198, 205, 0.2);
+`;
 
 export const ArticleWrapper = styled(motion.div)`
     display: flex;

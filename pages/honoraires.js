@@ -1,6 +1,6 @@
 import {HonorairesWrapper, LeftSide, RightSide, BackgroundHono, Line} from "../styles/honorairesStyles";
 import { motion } from 'framer-motion';
-import {pageAnimation} from "../styles/animations";
+import {pageAnimation, lineAnim, honorairesTextAnim} from "../styles/animations";
 
 export default function Honoraires() {
     return (
@@ -16,8 +16,8 @@ export default function Honoraires() {
                     <h1>HONORAIRES</h1>
                 </LeftSide>
                 <RightSide>
-                    <Line/>
-                    <div>
+                    <Line variants={lineAnim}/>
+                    <motion.div layout variants={honorairesTextAnim}>
                         <p>Les honoraires du Cabinet sont déterminés à l’avance en fonction de la complexité du dossier. </p>
                         <p>Selon le type de dossier, ils pourront être fixés au temps passé ou au forfait ou un honoraire de résultat pourra également être convenu.</p>
                         <p>Au prix qui sera défini, la TVA au taux de 20% sera applicable.</p>
@@ -28,7 +28,7 @@ export default function Honoraires() {
                             <li><p>par votre assurance protection juridique, si vous en avez une</p></li>
                             <li><p>par l’aide juridictionnelle, laquelle peut être accordée selon vos revenus </p></li>
                         </ul>
-                    </div>
+                    </motion.div>
                 </RightSide>
             </HonorairesWrapper>
         <BackgroundHono/>

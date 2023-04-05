@@ -1,6 +1,7 @@
 import styled from "styled-components";
+import {motion} from "framer-motion";
 
-export const MentionWrapper = styled.div`
+export const MentionWrapper = styled(motion.div)`
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -20,14 +21,14 @@ export const MentionWrapper = styled.div`
     }
 `;
 
-export const Text = styled.div`
+export const Text = styled(motion.div)`
     display: flex;
     flex-direction: column;
     margin: 2rem 3rem;
     font-family: "Poppins_light";
 `;
 
-export const Section = styled.div`
+export const Section = styled(motion.div)`
     h3 {
         margin-top: 1.5rem;
     }
@@ -41,7 +42,7 @@ export const Section = styled.div`
     }
 `;
 
-export const Underlign = styled.div`
+export const Underlign = styled(motion.div)`
     height: 1px;
     background: var(--bluelight);
     width: 12%;

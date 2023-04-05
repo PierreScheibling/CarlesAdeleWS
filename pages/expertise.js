@@ -5,7 +5,7 @@ import imgAff from "../public/images/Affaires.jpeg";
 import Link from 'next/link';
 import {ExpertiseWrapper, ExpertiseContent, LeftSide, RightSide, Section, Text} from "../styles/expertiseStyles";
 import { motion } from 'framer-motion';
-import {pageAnimation} from "../styles/animations";
+import {pageAnimation, expertiseTitleAnim, expertiseTextAnim} from "../styles/animations";
 
 export default function Expertise() {
     return (
@@ -20,34 +20,48 @@ export default function Expertise() {
                     <LeftSide>
                         <Image className="imgExp" src={logoexp} />
                     </LeftSide>
-                    <RightSide>
+                    <RightSide initial={{ opacity: 0 }}
+                animate={{ opacity:1, transition: { delay: 0.5, duration: 0.7 } }}>
                         <Section>
                             <Image className="imgSection" src={imgFisca} />
-                            <Text>
+                            <Text variants={expertiseTitleAnim} exit="exit"
+                            initial="hidden"
+                            animate="show">
                                 <h2>FISCALITÉ</h2>
                                 <Link href={"/fiscalitepart"}>
-                                    <p>FISCALITÉ DES PARTICULIERS</p>
+                                    <motion.p variants={expertiseTextAnim} exit="exit"
+                                    initial="hidden"
+                                    animate="show">FISCALITÉ DES PARTICULIERS</motion.p>
                                 </Link>
                                 <Link href={"/fiscalitesoc"}>
-                                    <p>FISCALITÉ DES SOCIÉTÉS</p>
+                                    <motion.p variants={expertiseTextAnim} exit="exit"
+                                    initial="hidden"
+                                    animate="show">FISCALITÉ DES SOCIÉTÉS</motion.p>
                                 </Link>
                             </Text>
                         </Section>
                         <Section>
                             <Image className="imgSection" src={imgAff} />
-                            <Text>
+                            <Text Text variants={expertiseTitleAnim} exit="exit"
+                            initial="hidden"
+                            animate="show">
                                 <h2>DROIT DES AFFAIRES</h2>
                                 <Link href={"/drsoc"}>
-                                    <p>DROIT DES SOCIÉTÉS</p>
+                                    <motion.p variants={expertiseTextAnim} exit="exit"
+                                    initial="hidden"
+                                    animate="show">DROIT DES SOCIÉTÉS</motion.p>
                                 </Link>
                                 <Link href={"/drsoc"}>
-                                    <p>DROIT COMMERCIAL</p>
+                                    <motion.p variants={expertiseTextAnim} exit="exit"
+                                    initial="hidden"
+                                    animate="show">DROIT COMMERCIAL</motion.p>
                                 </Link>
                             </Text>
                         </Section>
                     </RightSide>
                 </ExpertiseContent>
-            <ExpertiseWrapper />
+            <ExpertiseWrapper initial={{ opacity: 0 }}
+                animate={{ opacity:1, transition: { duration: 0.5 } }}/>
         </motion.div>
         </>
     )

@@ -1,6 +1,7 @@
 import styled from "styled-components";
+import {motion} from "framer-motion";
 
-export const ExpertiseWrapper = styled.div`
+export const ExpertiseWrapper = styled(motion.div)`
     height: 100%;
     width: 100%;
     position: absolute;
@@ -9,13 +10,13 @@ export const ExpertiseWrapper = styled.div`
     z-index: -1;
 `;
 
-export const ExpertiseContent = styled.div`
+export const ExpertiseContent = styled(motion.div)`
     min-height: 85vh;
     display: flex;
     align-items: center;
 `;
 
-export const LeftSide = styled.div`
+export const LeftSide = styled(motion.div)`
     display: flex;
     justify-content: center;
     align-items: center;
@@ -28,7 +29,7 @@ export const LeftSide = styled.div`
     }
 `;
 
-export const RightSide = styled.div`
+export const RightSide = styled(motion.div)`
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -36,7 +37,7 @@ export const RightSide = styled.div`
     width: 70%;
 `;
 
-export const Section = styled.div`
+export const Section = styled(motion.div)`
     display: flex;
     align-items: center;
     justify-content: center;
@@ -52,7 +53,7 @@ export const Section = styled.div`
     }
 `;
 
-export const Text = styled.div`
+export const Text = styled(motion.div)`
     background-color: white;
     height: 100%;
     width: 100%;

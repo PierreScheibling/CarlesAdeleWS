@@ -1,6 +1,7 @@
 import styled from "styled-components";
+import {motion} from "framer-motion";
 
-export const ContactWrapper = styled.div`
+export const ContactWrapper = styled(motion.div)`
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -8,7 +9,7 @@ export const ContactWrapper = styled.div`
     min-height: 85vh;
 `;
 
-export const Title = styled.div`
+export const Title = styled(motion.div)`
     h1 {
         font-family: "RoxboroughCF";
         font-weight: lighter;
@@ -17,7 +18,7 @@ export const Title = styled.div`
     }
 `;
 
-export const Content = styled.div`
+export const Content = styled(motion.div)`
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -26,7 +27,7 @@ export const Content = styled.div`
     width: 90%;
 `;
 
-export const LeftSide = styled.div`
+export const LeftSide = styled(motion.div)`
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -34,7 +35,7 @@ export const LeftSide = styled.div`
     height: 80%;
 `;
 
-export const Icons = styled.div`
+export const Icons = styled(motion.div)`
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -49,20 +50,20 @@ export const Icons = styled.div`
     }
 `;
 
-export const RightSide = styled.div`
+export const RightSide = styled(motion.div)`
     width: 50%;
     /* background: rgba(140, 198, 205, 0.2); */
     height: 100%;
 `;
 
-export const FormContainer = styled.div`
+export const FormContainer = styled(motion.div)`
     display: flex;
     h2 {
         color: var(--greyblue);
     }
 `;
 
-export const Form = styled.div`
+export const Form = styled(motion.div)`
     display: flex;
     flex-direction: column;
     margin: 1rem 0;

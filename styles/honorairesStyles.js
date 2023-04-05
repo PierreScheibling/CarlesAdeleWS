@@ -1,6 +1,7 @@
 import styled from "styled-components";
+import {motion} from "framer-motion";
 
-export const HonorairesWrapper = styled.div`
+export const HonorairesWrapper = styled(motion.div)`
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -8,7 +9,7 @@ export const HonorairesWrapper = styled.div`
     position: relative;
 `;
 
-export const BackgroundHono = styled.div`
+export const BackgroundHono = styled(motion.div)`
     z-index: -1;
     position: absolute;
     top: 0;
@@ -18,7 +19,7 @@ export const BackgroundHono = styled.div`
     background: rgba(140, 198, 205, 0.2);
 `;
 
-export const LeftSide = styled.div`
+export const LeftSide = styled(motion.div)`
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -33,7 +34,7 @@ export const LeftSide = styled.div`
     }
 `;
 
-export const RightSide = styled.div`
+export const RightSide = styled(motion.div)`
     display: flex;
     position: relative;
     flex-direction: column;
@@ -57,7 +58,7 @@ export const RightSide = styled.div`
     }
 `;
 
-export const Line = styled.div`
+export const Line = styled(motion.div)`
     position: relative;
     left: -20%;
     background: var(--black);

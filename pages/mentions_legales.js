@@ -1,13 +1,22 @@
 import { MentionWrapper, Underlign, Text, Section } from "../styles/mentionStyles.js";
+import {motion} from "framer-motion";
+import {pageAnimation, mentionLineAnim} from "../styles/animations";
 
 export default function Mention() {
     return (
+        <>
+        <motion.div
+            variants={pageAnimation}
+            exit="exit"
+            initial="hidden"
+            animate="show"
+            >
         <MentionWrapper>
                 <h1>MENTIONS LÉGALES</h1>
             <Text>
                 <Section>
                     <h3>1 – Édition du site</h3>
-                    <Underlign />
+                    <Underlign variants={mentionLineAnim}/>
                     <div>
                         <p>En vertu de l’article 6 de la loi n° 2004-575 du 21 juin 2004 pour la confiance dans l’économie numérique, il est précisé aux utilisateurs du site internet https://carles-avocat.fr l’identité des différents intervenants dans le cadre de sa réalisation et de son suivi:</p>
                         <ul>
@@ -22,7 +31,7 @@ export default function Mention() {
                 </Section>
                 <Section>
                     <h3>2 – Propriété intellectuelle et contrefaçons.</h3>
-                    <Underlign />
+                    <Underlign variants={mentionLineAnim}/>
                     <div>
                         <p>Adèle CARLES est propriétaire des droits de propriété intellectuelle et détient les droits d’usage sur tous les éléments accessibles sur le site internet, notamment les textes, images, graphismes, logos, vidéos, architecture, icônes et sons.</p>
                         <p>Toute reproduction, représentation, modification, publication, adaptation de tout ou partie des éléments du site, quel que soit le moyen ou le procédé utilisé, est interdite, sauf autorisation écrite préalable de Adèle CARLES.</p>
@@ -31,7 +40,7 @@ export default function Mention() {
                 </Section>
                 <Section>
                     <h3>3 – Limitations de responsabilité.</h3>
-                    <Underlign />
+                    <Underlign variants={mentionLineAnim}/>
                     <div>
                         <p>Adèle CARLES ne pourra être tenu pour responsable des dommages directs et indirects causés au matériel de l’utilisateur, lors de l’accès au site https://carles-avocat.fr.</p>
                         <p>Adèle CARLES décline toute responsabilité quant à l’utilisation qui pourrait être faite des informations et contenus présents sur https://carles-avocat.fr.</p>
@@ -51,7 +60,7 @@ export default function Mention() {
                 </Section>
                 <Section>
                     <h3>5 – Liens hypertextes et cookies</h3>
-                    <Underlign />
+                    <Underlign variants={mentionLineAnim}/>
                     <div>
                         <p>Le site https://carles-avocat.fr contient des liens hypertextes vers d’autres sites et dégage toute responsabilité à propos de ces liens externes ou des liens créés par d’autres sites vers https://carles-avocat.fr.</p>
                         <p>La navigation sur le site https://carles-avocat.fr est susceptible de provoquer l’installation de cookie(s) sur l’ordinateur de l’utilisateur.</p>
@@ -63,12 +72,14 @@ export default function Mention() {
                 </Section>
                 <Section>
                     <h3>6 – Droit applicable et attribution de juridiction.</h3>
-                    <Underlign />
+                    <Underlign variants={mentionLineAnim}/>
                     <div>
                         <p>Tout litige en relation avec l’utilisation du site https://carles-avocat.fr est soumis au droit français. En dehors des cas où la loi ne le permet pas, il est fait attribution exclusive de juridiction aux tribunaux compétents de Bordeaux.</p>
                     </div>
                 </Section>
             </Text>
         </MentionWrapper>
+        </motion.div>
+        </>
     )
 }
