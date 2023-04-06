@@ -24,6 +24,9 @@ export const PresentationContent = styled(motion.div)`
     display: flex;
     justify-content: center;
     align-items: center;
+    @media (max-width: 850px) {
+        flex-direction: column;
+    }
 `;
 
 export const LeftSide = styled(motion.div)`
@@ -39,6 +42,19 @@ export const LeftSide = styled(motion.div)`
         object-fit: cover;
         opacity: 0.8;
     }
+    @media (max-width: 850px) {
+      align-items: flex-start;
+      justify-content: space-evenly;
+      min-height: 50vh;
+        width: 100%;
+        margin-top: 0vh;
+        .photoAdCl {
+          width: clamp(5%, 25vh, 40%);
+          height: clamp(5%, 45vh, 40%);
+          object-fit: cover;
+          opacity: 0.8;
+      }
+    }
 `;
 
 export const Name = styled(motion.div)`
@@ -51,6 +67,13 @@ export const Name = styled(motion.div)`
     font-size: clamp(1.5rem,  6vw, 10rem);
     color: var(--grey);
   }
+  @media (max-width: 850px) {
+    width: 40%;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 25vh;
+  }
 `;
 
 export const RightSide = styled(motion.div)`
@@ -62,5 +85,11 @@ export const RightSide = styled(motion.div)`
         font-family: "Poppins_light";
         margin: 1.5rem 0;
         color: var(--grey);
+    }
+    @media (max-width: 850px) {
+        width: 100%;
+        p{
+            margin: clamp(0.2rem, 3vh, 8rem) 0;
+        }
     }
 `;
