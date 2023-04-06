@@ -26,6 +26,7 @@ export const Text = styled(motion.div)`
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
     font-family: "Poppins_light";
     color: var(--bluelight);
     position: relative;

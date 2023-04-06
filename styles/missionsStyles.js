@@ -6,6 +6,11 @@ export const MissionsWrapper = styled(motion.div)`
     padding: 0 3%; 
     width: 100%;
     display: flex;
+    @media (max-width: 850px) {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 `;
 
 export const MissionsBackground = styled(motion.div)`
@@ -26,9 +31,14 @@ export const LeftSide = styled(motion.div)`
     width: 50%;
     h1 {
         font-family: "RoxboroughCF";
-        font-size: clamp(2rem,  6vw, 10rem);
+        font-size: clamp(0.5rem,  6vw, 10rem);
         color: var(--greyblue);
         font-weight: lighter;
+    }
+    @media (max-width: 850px) {
+        width: 100%;
+        height: 100%;
+        margin-top: 2rem;
     }
 `;
 
@@ -38,11 +48,18 @@ export const Subtext = styled.div`
         display: flex;
         justify-content: flex-start;
         border-top: 1px solid var(--grey);
-        font-size: clamp(1.5rem,  2vw, 10rem);
+        font-size: clamp(0.5rem,  2vw, 10rem);
         color: var(--bluelight);
         font-weight: lighter;
         padding-top: 2rem;
         line-height: 150%;
+    }
+    @media (max-width: 850px) {
+        margin-left: 0;
+        text-align: center;
+        h2 {
+            padding-top: 0rem;
+        }
     }
 `;
 
@@ -55,9 +72,17 @@ export const RightSide = styled(motion.div)`
     width: 50%;
     padding: 0 4rem;
     p {
-        font-size: clamp(0.3rem, 2vh, 8rem);
+        font-size: clamp(0.2rem, 2vh, 8rem);
         font-family: "Poppins_light";
-        margin: 1.5rem 0;
+        margin: clamp(0.2rem, 4vh, 8rem) 0;
         color: var(--greyblue);
     }
+    @media (max-width: 850px) {
+        width: 100%;
+        height: 100%;
+        p{
+            margin: clamp(0.2rem, 3vh, 8rem) 0;
+        }
+    }
+
 `;
