@@ -28,7 +28,9 @@ export const Logo = styled.div`
             object-fit: cover;
         }
     @media (max-width: 850px) {
-        display: none;
+        .imgNav{
+            object-fit: cover;
+        }
     }
 `;
 
