@@ -20,7 +20,7 @@ export default function FiscalitePart() {
                         <Underlign />
                         <div>
                             <p>– Création de société (conseil et assistance sur le choix de la forme, rédaction des statuts, formalités légales...)</p>
-                            <p>– Accompagnement dans la cession/acquisition de société et de fond de commerce  (négociations, audit juridique et fiscal, rédaction des promesses d''achat/vente, rédaction des actes de cession, formalités légales ...)</p>
+                            <p>– Accompagnement dans la cession/acquisition de société et de fond de commerce  (négociations, audit juridique et fiscal, rédaction des promesses d&apos;achat/vente, rédaction des actes de cession, formalités légales ...)</p>
                         </div>
                         <h3>RESTRUCTURATION</h3>
                         <Underlign />
@@ -28,7 +28,7 @@ export default function FiscalitePart() {
                             <p>– Analyse et accompagnement dans la restructuration de groupe (aspects juridiques, fiscaux et financiers)</p>
                             <p>– Réalisation d’opération sur le capital (fusion, apport partiel d’actifs, augmentions et réduction de capital)</p>
                         </div>
-                        <h3>PACTE D'ASSOCIES</h3>
+                        <h3>PACTE D&apos;ASSOCIES</h3>
                         <Underlign />
                         <div>
                             <p>– Négociation et rédaction des Pactes d’associés</p>

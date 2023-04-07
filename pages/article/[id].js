@@ -4,6 +4,7 @@ import { loadData, urlFor } from '../api/article';
 import { motion } from 'framer-motion';
 import { pageAnimation } from '../../styles/animations';
 import { ArticleWrapper, Title, Content } from '../../styles/blogStyles';
+import Image from 'next/image';
 
 export default function Article({ article }) {
   return (
@@ -17,7 +18,7 @@ export default function Article({ article }) {
         <Title>
           <h1>{article.Title}</h1>
         </Title>
-        <img src={urlFor(article.image).url()} alt="article" />
+        <Image className="photoAdCl" src={urlFor(article.image).url()} alt="article"/>
         <Content>
           <h2>{article.Title}</h2>
           <h3>{article.Author}</h3>

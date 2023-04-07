@@ -1,5 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import {loadData, urlFor} from './api/article';
+import Image from 'next/image';
 //Style
 import {BlogWrapper, ArticleWrapper, Title, Articles, Content, Line, TitleLine} from '../styles/blogStyles';
 import { motion } from 'framer-motion';
@@ -45,12 +46,12 @@ export default function Blog({articles, total}) {
             {articles.map((article) => (
               <div key={article._id}>
                 <ArticleWrapper layout variants={articleAnim}>
-                  <img src={urlFor(article.image).url()} alt="image-article" />
+                  <Image className="photoAdCl" src={urlFor(article.image).url()} alt="image-article"/>
                   <Content>
                     <h2>{article.Title}</h2>
                     <h3>{article.Author}</h3>
                     <p>{article.releaseDate}</p>
-                    <a href={`/article/${article._id}`}><p>En savoir plus</p></a>
+                    {/* <a href={`/article/${article._id}`}><p>En savoir plus</p></a> */}
                   </Content>
                   <Line/>
                 </ArticleWrapper>

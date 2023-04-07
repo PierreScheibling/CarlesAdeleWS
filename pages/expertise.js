@@ -18,12 +18,12 @@ export default function Expertise() {
             >
                 <ExpertiseContent>
                     <LeftSide>
-                        <Image className="imgExp" src={logoexp} />
+                        <Image className="imgExp" src={logoexp} alt="logoExp"/>
                     </LeftSide>
                     <RightSide initial={{ opacity: 0 }}
                 animate={{ opacity:1, transition: { delay: 0.5, duration: 0.7 } }}>
                         <Section>
-                            <Image className="imgSection" src={imgFisca} />
+                            <Image className="imgSection" src={imgFisca} alt="image-section"/>
                             <Text variants={expertiseTitleAnim} exit="exit"
                             initial="hidden"
                             animate="show">
@@ -41,7 +41,7 @@ export default function Expertise() {
                             </Text>
                         </Section>
                         <Section>
-                            <Image className="imgSection" src={imgAff} />
+                            <Image className="imgSection" src={imgAff} alt="image-section" />
                             <Text Text variants={expertiseTitleAnim} exit="exit"
                             initial="hidden"
                             animate="show">

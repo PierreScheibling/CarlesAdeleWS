@@ -33,7 +33,7 @@ export default function FiscalitePart() {
                     <div>
                         <p>– Accompagnement dans la déclaration et le calcul de l’impôt sur les sociétés annuel</p>
                         <p>- Mise en place d’une intégration fiscale</p>
-                        <p>- Option à l'impôt sur les sociétés</p>
+                        <p>- Option à l&apos;impôt sur les sociétés</p>
                     </div>
                     <h3>INTERESSEMENT DES SALARIES</h3>
                     <Underlign />
