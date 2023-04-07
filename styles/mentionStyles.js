@@ -26,6 +26,10 @@ export const Text = styled(motion.div)`
     flex-direction: column;
     margin: 2rem 3rem;
     font-family: "Poppins_light";
+    
+    @media (max-width: 850px) {
+        margin: 1rem 2rem;
+    }
 `;
 
 export const Section = styled(motion.div)`
@@ -39,6 +43,15 @@ export const Section = styled(motion.div)`
         font-weight: bolder;
         color: var(--black);
         font-style: italic;
+    }
+    @media (max-width: 850px) {
+        h3 {
+            margin-top: 1rem;
+            font-size: clamp(0.7rem, 1.8vh, 10rem);
+        }
+        p {
+            font-size: clamp(0.6rem, 1.5vh, 8rem);
+        }
     }
 `;
 

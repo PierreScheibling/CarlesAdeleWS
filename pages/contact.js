@@ -54,7 +54,7 @@ export default function Contact() {
                                 href="mailto:carles.avocat@outlook.fr"
                                 target="_blank"
                                 rel="carles.avocat@outlook.fr"
-                                ><p>carles.avocat@outlook.fr</p></a>
+                                ><p>carles.avocat</p></a>
                             </div>
                         </Icons>
                         <Icons>

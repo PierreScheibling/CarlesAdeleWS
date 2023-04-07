@@ -24,6 +24,10 @@ export const SectionFiscaPart = styled(motion.div)`
     /* align-items: center; */
     min-height: 75vh;
     width: 95%;
+    @media (max-width: 850px) {
+        flex-direction: column;
+        width: 100%;
+    }
 `;
 
 export const UpperLine = styled(motion.div)`
@@ -32,6 +36,9 @@ export const UpperLine = styled(motion.div)`
     width: 85%;
     position: absolute;
     top: -4%;
+    @media (max-width: 850px) {
+        display: none;
+    }
 `;
 
 export const SSFiscaPart = styled(motion.div)`
@@ -64,6 +71,12 @@ export const SSFiscaPart = styled(motion.div)`
     span {
         text-decoration: underline;
     }
+    @media (max-width: 850px) {
+        width: 100%;
+        p {
+            text-align: left;
+        }
+    }
 `;
 
 export const Underlign = styled(motion.div)`
@@ -77,4 +90,7 @@ export const Line = styled(motion.div)`
     height: 65vh;
     background: black;
     width: 0.05rem;
+    @media (max-width: 850px) {
+        display: none;
+    }
 `;

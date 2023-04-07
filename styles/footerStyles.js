@@ -9,6 +9,11 @@ export const FooterStyles = styled.div`
     padding: 1rem 0;
     position: relative;
     font-family: "Poppins_light";
+    @media (max-width: 850px) {
+        h3 {
+            font-size: clamp(0.7rem, 1.5vh, 10rem);
+        }
+    }
 `;
 
 export const Line = styled.div`

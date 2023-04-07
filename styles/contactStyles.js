@@ -14,7 +14,7 @@ export const Title = styled(motion.div)`
         font-family: "RoxboroughCF";
         font-weight: lighter;
         color: var(--greyblue);
-        font-size: clamp(0.5rem, 7vh, 15rem);
+        font-size: clamp(1.5rem, 7vh, 15rem);
     }
 `;
 
@@ -25,6 +25,12 @@ export const Content = styled(motion.div)`
     height: 75vh;
     margin-top: 2rem;
     width: 90%;
+    @media (max-width: 850px) {
+        flex-direction: column;
+        height: 100%;
+        align-items: center;
+        margin-top: 1rem;
+    }
 `;
 
 export const LeftSide = styled(motion.div)`
@@ -32,7 +38,17 @@ export const LeftSide = styled(motion.div)`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: flex-start;
     height: 80%;
+    @media (max-width: 850px) {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        grid-template-columns: 100% repeat(auto-fill, 80%);
+        p {
+            text-align: left;
+        }
+    }
 `;
 
 export const Icons = styled(motion.div)`
@@ -48,12 +64,28 @@ export const Icons = styled(motion.div)`
         font-family: "Poppins_light";
         color: var(--greyblue);
     }
+    @media (max-width: 850px) {
+        svg {
+        width: clamp(1.5em, 4vh, 15rem);
+        color: var(--greyblue);
+        }
+        div {
+        margin: 1rem 0 0 1rem;
+        }
+    }
 `;
 
 export const RightSide = styled(motion.div)`
     width: 50%;
     /* background: rgba(140, 198, 205, 0.2); */
     height: 100%;
+    @media (max-width: 850px) {
+        margin-top: 3rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 `;
 
 export const FormContainer = styled(motion.div)`
@@ -122,5 +154,16 @@ export const Form = styled(motion.div)`
         margin-top: 1rem;
         font-style: italic;
         color: var(--greyblue);
+    }
+    @media (max-width: 850px) {
+        div {
+        width: 100%;
+        };
+        input {
+        padding: 0.7rem;
+        border: 0.2px solid var(--greyblue);
+        border-radius: 0.5rem;
+        width: 60%;
+        }  
     }
 `;

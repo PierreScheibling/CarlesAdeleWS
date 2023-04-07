@@ -46,8 +46,8 @@ export const LeftSide = styled(motion.div)`
       align-items: flex-start;
       justify-content: space-evenly;
       min-height: 50vh;
-        width: 100%;
-        margin-top: 0vh;
+      width: 100%;
+      margin-top: 0vh;
         .photoAdCl {
           width: clamp(5%, 25vh, 40%);
           height: clamp(5%, 45vh, 40%);
@@ -88,6 +88,7 @@ export const RightSide = styled(motion.div)`
     }
     @media (max-width: 850px) {
         width: 100%;
+        padding: 0 2.5rem;
         p{
             margin: clamp(0.2rem, 3vh, 8rem) 0;
         }

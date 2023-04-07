@@ -37,6 +37,12 @@ export const Text = styled(motion.div)`
         font-size: clamp(0.5rem, 4vh, 12rem);
         padding: 2rem;
     }
+    @media (max-width: 850px) {
+        width: 100%;
+        h1{
+        padding: 0rem;
+        }
+    }
 `;
 
 export const Line1 = styled(motion.div)`

@@ -27,6 +27,9 @@ export const LeftSide = styled(motion.div)`
         height: 100%;
         object-fit: cover;
     }
+    @media (max-width: 850px) {
+        display: none;
+    }
 `;
 
 export const RightSide = styled(motion.div)`
@@ -35,6 +38,12 @@ export const RightSide = styled(motion.div)`
     align-items: center;
     min-height: 85vh;
     width: 70%;
+    @media (max-width: 850px) {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 0;
+        justify-content: space-evenly;
+    }
 `;
 
 export const Section = styled(motion.div)`
@@ -51,6 +60,16 @@ export const Section = styled(motion.div)`
         object-fit: cover;
         padding-bottom: 1rem;
     }
+    @media (max-width: 850px) {
+        width: 100%;
+        height: 50%;
+        .imgSection {
+        width: 100%;
+        height: 15vh;
+        padding-bottom: 0;
+        object-fit: cover;
+    }
+    }
 `;
 
 export const Text = styled(motion.div)`
@@ -65,10 +84,22 @@ export const Text = styled(motion.div)`
         font-family: "RoxboroughCF";
         margin: 2rem 0;
         font-size: clamp(0.4rem, 3.5vh, 12rem);
+        text-align: center;
     }
     p {
         font-family: "Poppins_medium";
         margin: 1.5rem 0;
         /* font-size: clamp(0.3rem, 2vh, 8rem); */
+    }
+    @media (max-width: 850px) {
+        height: 20vh;
+        align-items: flex-start;
+        h2 {
+            margin: 1rem 0 1rem 0.5rem;
+            font-size: clamp(0.4rem, 3vh, 12rem);
+        }
+        p {
+            margin: 0.5rem 0 0.5rem 0.5rem;
+        }
     }
 `;

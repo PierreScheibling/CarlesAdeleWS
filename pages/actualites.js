@@ -50,7 +50,7 @@ export default function Blog({articles, total}) {
                     <h2>{article.Title}</h2>
                     <h3>{article.Author}</h3>
                     <p>{article.releaseDate}</p>
-                    <a href={`/article/${article._id}`}>En savoir plus</a>
+                    <a href={`/article/${article._id}`}><p>En savoir plus</p></a>
                   </Content>
                   <Line/>
                 </ArticleWrapper>

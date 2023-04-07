@@ -28,6 +28,12 @@ export const Title = styled(motion.div)`
         margin-left: 3rem;
         font-size: clamp(0.5rem, 7vh, 15rem);
     }
+    @media (max-width: 850px) {
+        h1 {
+        margin-left: 1rem;
+        font-size: clamp(0.5rem, 6vh, 15rem);
+        }
+    }
 `;
 export const TitleLine = styled(motion.div)`
     z-index: -1;
@@ -53,6 +59,10 @@ export const ArticleWrapper = styled(motion.div)`
         width: 30%;
         object-fit: cover;
     }
+    @media (max-width: 850px) {
+        width: 90%;
+        margin: 2rem 0 2rem 2rem;
+    }
 `;
 
 export const Line = styled(motion.div)`
@@ -76,5 +86,9 @@ export const Content = styled(motion.div)`
     line-height: 170%;
     h2 {
         font-weight: bolder;
+    }
+    @media (max-width: 850px) {
+        line-height: 100%;
+        padding-left: 1rem;
     }
 `;
