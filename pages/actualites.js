@@ -46,7 +46,7 @@ export default function Blog({articles, total}) {
             {articles.map((article) => (
               <div key={article._id}>
                 <ArticleWrapper layout variants={articleAnim}>
-                  <Image className="photoAdCl" src={urlFor(article.image).url()} alt="image-article"/>
+                  <img className="imgArt" src={urlFor(article.image).url()} alt="image-article"/>
                   <Content>
                     <h2>{article.Title}</h2>
                     <h3>{article.Author}</h3>
