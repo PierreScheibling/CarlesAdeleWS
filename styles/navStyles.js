@@ -61,12 +61,13 @@ export const MenuLinks = styled.ul`
         position: absolute;
         flex-direction: column;
         align-items: center;
-        justify-content: space-evenly;
+        justify-content: flex-start;
         background: white;
-        height: 85vh;
+        height: 100vh;
         top: 15vh;
         transition: all;
         li {
+            margin: 1rem 0;
             :hover{
                 font-size: clamp(0.4rem, 2.7vh, 12rem);
             }
