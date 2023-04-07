@@ -27,6 +27,9 @@ export const Logo = styled.div`
             height: 100%;
             object-fit: cover;
         }
+    @media (max-width: 850px) {
+        display: none;
+    }
 `;
 
 export const MenuIcon = styled.div`
