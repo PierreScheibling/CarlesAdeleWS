@@ -16,6 +16,9 @@ export const NavStyles = styled.div`
         font-size: clamp(0.4rem, 2.5vh, 12rem);
         color: var(--greyblue);
     }
+    @media (max-width: 850px) {
+        position:
+    }
 `;
 
 export const Logo = styled.div`
@@ -28,9 +31,7 @@ export const Logo = styled.div`
             object-fit: cover;
         }
     @media (max-width: 850px) {
-        .imgNav{
-            object-fit: cover;
-        }
+        display: none
     }
 `;
 
