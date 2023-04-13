@@ -41,14 +41,8 @@ export const LeftSide = styled(motion.div)`
     align-items: flex-start;
     height: 80%;
     @media (max-width: 850px) {
-        width: 40%;
-        display: grid;
-        align-items: center;
-        justify-content: center;
-        grid-template-columns: 25ch auto;
-        h3 {
-            display: none;
-        }
+        width: 33%;
+        height: 100%;
         p {
             text-align: left;
             font-size: clamp(0.5rem, 1.5vh, 8rem);
@@ -70,12 +64,13 @@ export const Icons = styled(motion.div)`
         color: var(--greyblue);
     }
     @media (max-width: 850px) {
+        margin: 0.5rem 0;
         svg {
             width: clamp(1.5em, 4vh, 15rem);
             color: var(--greyblue);
         }
         div {
-            margin: 1rem 0 0 1rem;
+            margin: 0rem 0 0 1rem;
         }
     }
 `;
