@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import Link from 'next/link';
-import { IndexWrapper, Text, Letters, LetterA, LetterC, Line1, Line2 } from "../styles/indexStyles";
+import { IndexWrapper, TextWrapper, Letters, LetterA, LetterC, Line1, Line2 } from "../styles/indexStyles";
 import Image from 'next/image';
 import logoind from "../public/images/LogoAC.png";
 import { motion } from 'framer-motion';
@@ -31,9 +31,9 @@ export default function Home() {
               </Letters>
               {/* <Image className="imgInd" src={logoind} alt="logo" /> */}
             </Link>
-            <Text className="textInd">
+            <TextWrapper className="textInd">
               <motion.h1 variants={avocat2Anim}>AVOCAT AU BARREAU DE BORDEAUX</motion.h1>
-            </Text>
+            </TextWrapper>
             <Line1 variants={lineIndex}/>
             <Line2 variants={lineIndex}/>
           </IndexWrapper>

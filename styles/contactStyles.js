@@ -41,10 +41,11 @@ export const LeftSide = styled(motion.div)`
     align-items: flex-start;
     height: 80%;
     @media (max-width: 850px) {
+        width: 40%;
         display: grid;
         align-items: center;
         justify-content: center;
-        grid-template-columns: 100% repeat(auto-fill, 80%);
+        grid-template-columns: 25ch auto;
         p {
             text-align: left;
         }
@@ -66,11 +67,11 @@ export const Icons = styled(motion.div)`
     }
     @media (max-width: 850px) {
         svg {
-        width: clamp(1.5em, 4vh, 15rem);
-        color: var(--greyblue);
+            width: clamp(1.5em, 4vh, 15rem);
+            color: var(--greyblue);
         }
         div {
-        margin: 1rem 0 0 1rem;
+            margin: 1rem 0 0 1rem;
         }
     }
 `;
@@ -81,7 +82,7 @@ export const RightSide = styled(motion.div)`
     height: 100%;
     @media (max-width: 850px) {
         margin-top: 3rem;
-        width: 100%;
+        width: 80%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -92,6 +93,10 @@ export const FormContainer = styled(motion.div)`
     display: flex;
     h2 {
         color: var(--greyblue);
+    }
+    @media (max-width: 850px) {
+        justify-content: center;
+        align-items: center;
     }
 `;
 
@@ -126,7 +131,7 @@ export const Form = styled(motion.div)`
         }
         textarea {
             width: 100%;
-            height: 5rem;
+            height: 8rem;
             margin-bottom: 1rem;
             border-radius: 0.5rem;
             padding: 1rem;
@@ -154,16 +159,28 @@ export const Form = styled(motion.div)`
         margin-top: 1rem;
         font-style: italic;
         color: var(--greyblue);
+        font-size: clamp(0.4rem, 1.3vh, 8rem);
     }
     @media (max-width: 850px) {
         div {
-        width: 100%;
+            width: 100%;
+            font-size: clamp(0.7rem, 2vh, 8rem);
         };
         input {
-        padding: 0.7rem;
-        border: 0.2px solid var(--greyblue);
-        border-radius: 0.5rem;
-        width: 60%;
-        }  
+            padding: 0.5rem;
+            border: 0.2px solid var(--greyblue);
+            border-radius: 0.5rem;
+            width: 60%;
+            font-size: clamp(0.7rem, 1.5vh, 8rem);
+        };
+        .message {
+            textarea {
+                height: 5rem;
+                font-size: clamp(0.7rem, 1.5vh, 8rem);
+            }
+        }
+        p {
+            margin-top: 0.5rem;
+        }
     }
 `;

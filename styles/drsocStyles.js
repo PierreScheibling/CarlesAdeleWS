@@ -55,6 +55,7 @@ export const SSFiscaPart = styled(motion.div)`
         font-family: "RoxboroughCF";
         margin: 2rem 0;
         height: 2vw;
+        text-decoration: underline;
     }
     h3 {
         font-family: "Poppins_medium";

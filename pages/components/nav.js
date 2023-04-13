@@ -34,10 +34,10 @@ export default function Nav() {
                     <Link href={"/presentation"} onClick={closeMenu}>PRESENTATION</Link>
                     </li>
                     <li>
-                    <Link href={"/expertise"} onClick={closeMenu}>EXPERTISES</Link>
+                    <Link href={"/competences"} onClick={closeMenu}>COMPÉTENCES</Link>
                     </li>
                     <li>
-                    <Link href={"/actualites"} onClick={closeMenu}>ACTUALITÉS</Link>
+                    <Link href={"/publications"} onClick={closeMenu}>PUBLICATIONS</Link>
                     </li>
                     <li>
                     <Link href={"/honoraires"} onClick={closeMenu}>HONORAIRES</Link>
@@ -60,13 +60,13 @@ export default function Nav() {
                         </Link>
                     </li>
                     <li>
-                        <Link href={"/expertise"}>
-                            EXPERTISES
+                        <Link href={"/competences"}>
+                            COMPÉTENCES
                         </Link>
                     </li>
                     <li>
-                        <Link href={"/actualites"}>
-                            ACTUALITÉS
+                        <Link href={"/publications"}>
+                            PUBLICATIONS
                         </Link>
                     </li>
                     <li>

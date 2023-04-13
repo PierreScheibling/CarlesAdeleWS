@@ -1,9 +1,9 @@
 import Image from 'next/image';
 import logoexp from "../public/images/LogoAC.png";
-import imgFisca from "../public/images/Fiscalité.jpeg";
-import imgAff from "../public/images/Affaires.jpeg";
+import imgFisca from "../public/images/Fiscalité.jpg";
+import imgAff from "../public/images/Affaires.jpg";
 import Link from 'next/link';
-import {ExpertiseWrapper, ExpertiseContent, LeftSide, RightSide, Section, Text} from "../styles/expertiseStyles";
+import {ExpertiseWrapper, ExpertiseContent, LeftSide, RightSide, Section, Text} from "../styles/competencesStyles";
 import { motion } from 'framer-motion';
 import {pageAnimation, expertiseTitleAnim, expertiseTextAnim} from "../styles/animations";
 

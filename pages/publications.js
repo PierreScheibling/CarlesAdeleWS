@@ -2,7 +2,7 @@
 import {loadData, urlFor} from './api/article';
 import Image from 'next/image';
 //Style
-import {BlogWrapper, ArticleWrapper, Title, Articles, Content, Line, TitleLine} from '../styles/blogStyles';
+import {BlogWrapper, ArticleWrapper, Title, Articles, Content, Line, TitleLine} from '../styles/publicationsStyles';
 import { motion } from 'framer-motion';
 import {pageAnimation, titlelineAnim, articlesAnim} from "../styles/animations";
 

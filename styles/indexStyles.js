@@ -22,7 +22,7 @@ export const IndexWrapper = styled(motion.div)`
     }
 `;
 
-export const Text = styled(motion.div)`
+export const TextWrapper = styled(motion.div)`
     display: flex;
     align-items: center;
     justify-content: center;
@@ -52,6 +52,9 @@ export const Line1 = styled(motion.div)`
     height: 0.15%;
     width: 40%;
     background-color: var(--grey);
+    @media (max-width: 850px) {
+        display: none;
+    }
 `;
 
 export const Line2 = styled(motion.div)`
@@ -61,6 +64,9 @@ export const Line2 = styled(motion.div)`
     height: 0.15%;
     width: 40%;
     background-color: var(--grey);
+    @media (max-width: 850px) {
+        display: none;
+    }
 `;
 
 export const Letters = styled(motion.div)`

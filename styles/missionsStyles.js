@@ -85,7 +85,7 @@ export const RightSide = styled(motion.div)`
     p {
         font-size: clamp(0.2rem, 2vh, 8rem);
         font-family: "Poppins_light";
-        margin: clamp(0.2rem, 4vh, 8rem) 0;
+        margin: clamp(0.2rem, 2vh, 8rem) 0;
         color: var(--greyblue);
     }
     @media (max-width: 850px) {

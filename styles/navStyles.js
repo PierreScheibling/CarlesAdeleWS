@@ -17,7 +17,7 @@ export const NavStyles = styled.div`
         color: var(--greyblue);
     }
     @media (max-width: 850px) {
-        position:
+        justify-content: space-between;
     }
 `;
 
@@ -31,7 +31,7 @@ export const Logo = styled.div`
             object-fit: cover;
         }
     @media (max-width: 850px) {
-        display: none
+        position: relative;
     }
 `;
 
@@ -48,8 +48,8 @@ export const MenuIcon = styled.div`
     @media (max-width: 850px) {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        position: absolute;
+        /* align-items: center;
+        position: absolute; */
         top: 5vh;
     }
 `;

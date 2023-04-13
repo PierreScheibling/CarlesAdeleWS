@@ -3,7 +3,7 @@
 import { loadData, urlFor } from '../api/article';
 import { motion } from 'framer-motion';
 import { pageAnimation } from '../../styles/animations';
-import { ArticleWrapper, Title, Content } from '../../styles/blogStyles';
+import { ArticleWrapper, Title, Content } from '../../styles/publicationsStyles';
 import Image from 'next/image';
 
 export default function Article({ article }) {

@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import photoAd from "../public/images/Photo.png";
+import photoAd from "../public/images/Photo.jpg";
 import {PresentationWrapper,PresentationContent, LeftSide, RightSide, Name} from "../styles/presentationStyles";
 import { motion } from 'framer-motion';
 import {pageAnimation} from "../styles/animations";
