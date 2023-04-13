@@ -41,7 +41,6 @@ export const LeftSide = styled(motion.div)`
     align-items: flex-start;
     height: 80%;
     @media (max-width: 850px) {
-        width: 33%;
         height: 100%;
         p {
             text-align: left;
