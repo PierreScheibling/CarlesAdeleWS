@@ -46,8 +46,12 @@ export const LeftSide = styled(motion.div)`
         align-items: center;
         justify-content: center;
         grid-template-columns: 25ch auto;
+        h3 {
+            display: none;
+        }
         p {
             text-align: left;
+            font-size: clamp(0.5rem, 1.5vh, 8rem);
         }
     }
 `;
