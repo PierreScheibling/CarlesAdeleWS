@@ -1,5 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import {loadData, urlFor} from './api/article';
+import Link from 'next/link';
 import Image from 'next/image';
 //Style
 import {BlogWrapper, ArticleWrapper, Title, Articles, Content, Line, TitleLine} from '../styles/publicationsStyles';
@@ -44,18 +45,18 @@ export default function Blog({articles, total}) {
             </Title>
             <Articles layout variants={articlesAnim} initial="hidden" animate="show">
             {articles.map((article) => (
-              <div key={article._id}>
-                <ArticleWrapper layout variants={articleAnim}>
-                  <img className="imgArt" src={urlFor(article.image).url()} alt="image-article"/>
-                  <Content>
-                    <h2>{article.Title}</h2>
-                    <h3>{article.Author}</h3>
-                    <p>{article.releaseDate}</p>
-                    {/* <a href={`/article/${article._id}`}><p>En savoir plus</p></a> */}
-                  </Content>
-                  <Line/>
-                </ArticleWrapper>
-              </div>
+              <Link href={`/article/${article._id}`} key={article._id}>
+                  <ArticleWrapper layout variants={articleAnim}>
+                    <img className="imgArt" src={urlFor(article.image).url()} alt="image-article"/>
+                    <Content>
+                      <h2>{article.Title}</h2>
+                      <h3>{article.Author}</h3>
+                      <p>{article.releaseDate}</p>
+                      {/* <a href={`/article/${article._id}`}><p>En savoir plus</p></a> */}
+                    </Content>
+                    <Line/>
+                  </ArticleWrapper>
+              </Link>
             ))
             }
             </Articles>

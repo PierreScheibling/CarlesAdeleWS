@@ -5,7 +5,7 @@ export const HonorairesWrapper = styled(motion.div)`
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    min-height: 85vh;
+    min-height: 100%;
     position: relative;
     @media (max-width: 850px) {
         flex-direction: column;
@@ -19,7 +19,7 @@ export const BackgroundHono = styled(motion.div)`
     top: 0vh;
     right: 0;
     width: 50%;
-    min-height: 100vh;
+    min-height: 100%;
     background: rgba(140, 198, 205, 0.2);
 `;
 

@@ -41,7 +41,7 @@ export const LeftSide = styled(motion.div)`
         width: 40%;
         height: 65vh;
         object-fit: cover;
-        opacity: 0.8;
+        opacity: 1;
     }
     @media (max-width: 850px) {
       align-items: flex-start;
@@ -53,7 +53,7 @@ export const LeftSide = styled(motion.div)`
           width: clamp(5%, 25vh, 40%);
           height: clamp(5%, 45vh, 40%);
           object-fit: cover;
-          opacity: 0.8;
+          opacity: 1;
       }
     }
 `;

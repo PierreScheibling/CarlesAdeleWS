@@ -36,7 +36,7 @@ export const RightSide = styled(motion.div)`
     display: flex;
     justify-content: space-around;
     align-items: center;
-    min-height: 85vh;
+    height: 100%;
     width: 70%;
     @media (max-width: 850px) {
         flex-direction: column;
@@ -51,12 +51,12 @@ export const Section = styled(motion.div)`
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 85vh;
+    height: 100%;
     width: 40%;
     padding: 0 1rem;
     .imgSection {
         width: 100%;
-        height: 80%;
+        height: 35vh;
         object-fit: cover;
         padding-bottom: 1rem;
     }
@@ -74,7 +74,7 @@ export const Section = styled(motion.div)`
 
 export const Text = styled(motion.div)`
     background-color: white;
-    height: 100%;
+    height: 50vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -82,14 +82,14 @@ export const Text = styled(motion.div)`
     color: var(--greyblue);
     h2 {
         font-family: "RoxboroughCF";
-        margin: 2rem 0;
+        margin: 1.5rem 0;
         font-size: clamp(0.4rem, 3.5vh, 12rem);
         text-align: center;
     }
     p {
         font-family: "Poppins_medium";
-        margin: 1.5rem 0;
-        /* font-size: clamp(0.3rem, 2vh, 8rem); */
+        margin: 1rem 0 1.5rem 0;
+        font-size: clamp(0.3rem, 2.3vh, 8rem);
     }
     @media (max-width: 850px) {
         height: 20vh;

@@ -22,7 +22,7 @@ export const Content = styled(motion.div)`
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    height: 75vh;
+    height: 100%;
     margin-top: 2rem;
     width: 90%;
     @media (max-width: 850px) {

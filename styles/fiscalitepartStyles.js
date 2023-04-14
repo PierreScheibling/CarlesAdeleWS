@@ -45,7 +45,7 @@ export const SSFiscaPart = styled(motion.div)`
     }
     h2 {
         font-family: "RoxboroughCF";
-        margin: 2rem 0;
+        margin: 2rem 0 3rem 0;
         height: 2vw;
     }
     h3 {

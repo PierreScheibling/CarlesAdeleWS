@@ -41,7 +41,7 @@ export default function Contact() {
                             <div>
                                 <h3>ADRESSE</h3>
                                 <a href="https://goo.gl/maps/wfnwW37DVYsRBKqCA" target="_blank">
-                                <p>2 rue des Remparts</p>
+                                <p>52 rue des Remparts</p>
                                 <p>33000 BORDEAUX</p>
                                 </a>
                             </div>
@@ -95,7 +95,7 @@ export default function Contact() {
                                             <textarea name="message" placeholder="Rédigez votre message" />
                                         </div>
                                         <button type="submit" value="Send">Envoyer</button>
-                                        <p>En cliquant sur le bouton envoyer, j’accepte la collecte et le traitement de les données personnelles afin d’être recontactée par le Cabinet</p>
+                                        <p>En cliquant sur le bouton envoyer, j’accepte la collecte et le traitement des données personnelles afin d’être recontacté par le Cabinet</p>
                                     </form>
                                 </Form>
                             </div>
