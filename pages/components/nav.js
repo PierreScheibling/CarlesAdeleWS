@@ -17,7 +17,7 @@ export default function Nav() {
         <NavStyles>
             <Logo>
                 <Link onClick={closeMenu} href={"/"}>
-                    <Image className="imgNav" src={logonav} alt="logo" />
+                    <Image className="imgNav" src={logonav} alt="logo"  />
                 </Link>
             </Logo>
             <MenuIcon onClick={toggleMenu}>

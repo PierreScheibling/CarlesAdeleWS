@@ -24,18 +24,14 @@ export const NavStyles = styled.div`
 export const Logo = styled.div`
     position: absolute;
     left: 0;
-    height: 15vh; 
+    height: 15vh;
     .imgNav{
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
+            height: 15vh;
+            width: 15vh;
+            object-fit: fill;
         }
     @media (max-width: 850px) {
         position: relative;
-        .imgNav{
-            height: 15vh;
-            object-fit: cover;
-        }
     }
 `;
 
