@@ -27,11 +27,15 @@ export const Logo = styled.div`
     height: 15vh; 
     .imgNav{
             width: 100%;
-            height: 15vh;
+            height: 100%;
             object-fit: cover;
         }
     @media (max-width: 850px) {
         position: relative;
+        .imgNav{
+            height: 15vh;
+            object-fit: cover;
+        }
     }
 `;
 
