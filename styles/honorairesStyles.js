@@ -9,16 +9,17 @@ export const HonorairesWrapper = styled(motion.div)`
     position: relative;
     @media (max-width: 850px) {
         flex-direction: column;
+        align-items: center;
     }
 `;
 
 export const BackgroundHono = styled(motion.div)`
     z-index: -1;
     position: absolute;
-    top: 0;
+    top: 0vh;
     right: 0;
     width: 50%;
-    min-height: 115vh;
+    min-height: 100vh;
     background: rgba(140, 198, 205, 0.2);
 `;
 
@@ -39,7 +40,7 @@ export const LeftSide = styled(motion.div)`
         min-height: 100%;
         h1 {
         margin-top: 0;
-        font-size: clamp(0.5rem, 6vh, 15rem);
+        font-size: clamp(0.5rem, 5vh, 15rem);
         }
     }
 `;
@@ -53,7 +54,6 @@ export const RightSide = styled(motion.div)`
     width: 50%;
     min-height: 85vh;
     padding: 0 4rem;
-    margin-top: 1rem;
     div {
         margin-top: 0.5rem;
     }
@@ -68,10 +68,10 @@ export const RightSide = styled(motion.div)`
     }
     @media (max-width: 850px) {
         width: 100%;
-        height: 100%;
         padding: 0 2.5rem;
         p{
             margin: clamp(0.2rem, 2vh, 8rem) 0;
+            font-size: clamp(0.6rem, 1.55vh, 8rem);
         }
     }
 `;

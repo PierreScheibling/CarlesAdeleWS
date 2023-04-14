@@ -26,6 +26,7 @@ export const PresentationContent = styled(motion.div)`
     align-items: center;
     @media (max-width: 850px) {
         flex-direction: column;
+        justify-content: flex-start;
     }
 `;
 
@@ -90,7 +91,8 @@ export const RightSide = styled(motion.div)`
         width: 100%;
         padding: 0 2.5rem;
         p{
-            margin: clamp(0.2rem, 3vh, 8rem) 0;
+          font-size: clamp(0.6rem, 1.55vh, 8rem);
+          margin: clamp(0.2rem, 2vh, 8rem) 0;
         }
     }
 `;

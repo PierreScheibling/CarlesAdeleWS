@@ -14,7 +14,7 @@ export const Title = styled(motion.div)`
         font-family: "RoxboroughCF";
         font-weight: lighter;
         color: var(--greyblue);
-        font-size: clamp(1.5rem, 7vh, 15rem);
+        font-size: clamp(0.5rem, 5vh, 15rem);
     }
 `;
 

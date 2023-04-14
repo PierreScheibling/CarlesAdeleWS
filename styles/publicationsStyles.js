@@ -31,7 +31,7 @@ export const Title = styled(motion.div)`
     @media (max-width: 850px) {
         h1 {
         margin-left: 1rem;
-        font-size: clamp(0.5rem, 6vh, 15rem);
+        font-size: clamp(0.5rem, 5vh, 15rem);
         }
     }
 `;
@@ -88,7 +88,7 @@ export const Content = styled(motion.div)`
         font-weight: bolder;
     }
     @media (max-width: 850px) {
-        line-height: 100%;
+        line-height: 150%;
         padding-left: 1rem;
     }
 `;

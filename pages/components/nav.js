@@ -16,7 +16,7 @@ export default function Nav() {
     return (
         <NavStyles>
             <Logo>
-                <Link href={"/"}>
+                <Link onClick={closeMenu} href={"/"}>
                     <Image className="imgNav" src={logonav} alt="logo" />
                 </Link>
             </Logo>

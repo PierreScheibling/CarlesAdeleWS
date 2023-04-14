@@ -9,7 +9,7 @@ export const MissionsWrapper = styled(motion.div)`
     @media (max-width: 850px) {
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-start;
     }
 `;
 
@@ -19,10 +19,6 @@ export const MissionsBackground = styled(motion.div)`
     height: 85vh;
     width: 100%;
     background-color: rgba(140, 198, 205, 0.2);
-    @media (max-width: 850px) {
-        height: 100%;
-        width: 100%;
-    }
 `;
 
 
@@ -40,6 +36,7 @@ export const LeftSide = styled(motion.div)`
         font-weight: lighter;
     }
     @media (max-width: 850px) {
+        justify-content: flex-start;
         width: 100%;
         height: 100%;
         margin-top: 2rem;
@@ -92,7 +89,9 @@ export const RightSide = styled(motion.div)`
         width: 100%;
         height: 100%;
         padding: 0 1.5rem;
+        justify-content: flex-start;
         p{
+            font-size: clamp(0.6rem, 1.55vh, 8rem);
             margin: clamp(0.2rem, 2vh, 8rem) 0;
         }
     }
