@@ -101,6 +101,17 @@ export default {
             {type: 'block'},
             {type: 'image'}
         ]
-      }
+      },
+      {
+        group: 'content',
+        title: 'Nouvelle description', 
+        name: 'NewDesc',
+        type: 'array',
+        // validation: Rule => Rule.required(),
+        of: [
+            {type: 'block'},
+            {type: 'image'}
+        ]
+      },
     ]
   }
