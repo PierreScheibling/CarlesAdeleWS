@@ -10,7 +10,6 @@ import {pageAnimation, titlelineAnim, articlesAnim} from "../styles/animations";
 const LOAD_MORE_STEP = 4;
 
 export default function Blog({articles, total}) {
-  console.log(articles);
   
   const articleAnim = {
     hidden: { opacity: 0, scale: 0.8 },
@@ -44,19 +43,21 @@ export default function Blog({articles, total}) {
                 animate="show"/>
             </Title>
             <Articles layout variants={articlesAnim} initial="hidden" animate="show">
-            {articles.map((article) => (
-              <Link href={`/article/${article._id}`} key={article._id}>
-                  <ArticleWrapper layout variants={articleAnim}>
-                    <img className="imgArt" src={urlFor(article.image).url()} alt="image-article"/>
-                    <Content>
-                      <h2>{article.Title}</h2>
-                      <h3>{article.Author}</h3>
-                      <p>{article.releaseDate}</p>
-                      {/* <a href={`/article/${article._id}`}><p>En savoir plus</p></a> */}
-                    </Content>
-                    <Line/>
-                  </ArticleWrapper>
-              </Link>
+            {articles.map((article, index) => (
+              <div key={index}>
+                <Link href={`${article._id}`}>
+                    <ArticleWrapper layout variants={articleAnim}>
+                      <img className="imgArt" src={urlFor(article.image).url()} alt="image-article"/>
+                      <Content>
+                        <h2>{article.Title}</h2>
+                        <h3>{article.Author}</h3>
+                        <p>{article.releaseDate}</p>
+                        {/* <a href={`/article/${article._id}`}><p>En savoir plus</p></a> */}
+                      </Content>
+                      <Line/>
+                    </ArticleWrapper>
+                </Link>
+              </div>
             ))
             }
             </Articles>

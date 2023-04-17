@@ -1,10 +1,6 @@
 import { client } from "@/lib/client";
 import imageUrlBuilder from '@sanity/image-url';
 
-export default function handler(req, res) {
-  res.status(200).json({ name: 'John Doe' })
-}
-
 export async function loadData(start, end) {
   const query = `{
     "articles": *[_type == "article"],

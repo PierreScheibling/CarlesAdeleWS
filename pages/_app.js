@@ -5,10 +5,10 @@ import { AnimatePresence } from 'framer-motion';
 
 export default function App({ Component, pageProps, router }) {
   return (
-      <AnimatePresence>
-        <Nav />
+      <AnimatePresence mode='wait'>
+        <Nav key="nav" />
         <Component key={router.pathname} {...pageProps}/>
-        <Footer />
+        <Footer key="footer"/>
       </AnimatePresence>
   )
 }
