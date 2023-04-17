@@ -1,10 +1,14 @@
 /* eslint-disable react/no-unescaped-entities */
-import {loadData, urlFor} from './api/article';
-import Image from 'next/image';
+import { getArticle, urlFor } from './api/article'
 //Style
-import {BlogWrapper, ArticleWrapper, Title, Articles, Content, Line, TitleLine} from '../styles/publicationsStyles';
-import { motion } from 'framer-motion';
-import {pageAnimation, titlelineAnim, articlesAnim} from "../styles/animations";
+import { motion } from 'framer-motion'
+import { pageAnimation } from '../styles/animations'
+import {
+  ArticleWrapper,
+  BlogWrapper,
+  Content,
+  Line,
+} from '../styles/publicationsStyles'
 
 export default function Article({ article }) {
   return (
@@ -19,28 +23,29 @@ export default function Article({ article }) {
           {/* <img className="imgArt" src={urlFor(article.image).url()} alt="image-article" /> */}
           <Content>
             <h3>Hello</h3>
-            <h2>{article.Title}</h2>
-            <h3>{article.Author}</h3>
-            <p>{article.releaseDate}</p>
-            <p>{article.content}</p>
+            <img
+              className="imgArt"
+              src={article?.image ? urlFor(article.image).url() : null}
+              alt="image-article"
+            />
+            <h2>{article?.Title}</h2>
+            <h3>{article?.Author}</h3>
+            <p>{article?.releaseDate}</p>
+            <p>{article?.description}</p>
           </Content>
           <Line />
         </ArticleWrapper>
       </BlogWrapper>
     </motion.div>
-  );
+  )
 }
 
-
 export async function getServerSideProps(context) {
-  const { id } = context.query;
-  const article = await loadData(id);
-  console.log(id);
-  console.log("hello");
-
+  const { id } = context.params
+  const article = await getArticle(id)
   return {
     props: {
       article,
     },
-  };
+  }
 }
