@@ -1,10 +1,9 @@
 /* eslint-disable react/no-unescaped-entities */
-import {loadData, urlFor} from './api/article';
-import Image from 'next/image';
+import { getArticle, urlFor } from './api/article';
 //Style
-import {BlogWrapper, ArticleWrapper, Title, Articles, Content, Line, TitleLine} from '../styles/publicationsStyles';
 import { motion } from 'framer-motion';
-import {pageAnimation, titlelineAnim, articlesAnim} from "../styles/animations";
+import { pageAnimation } from "../styles/animations";
+import { ContentWrapper, Content, Title, Subtitle} from '../styles/articleStyles';
 
 export default function Article({ article }) {
   return (
@@ -14,29 +13,28 @@ export default function Article({ article }) {
       initial="hidden"
       animate="show"
     >
-      <BlogWrapper>
-        <ArticleWrapper>
-          {/* <img className="imgArt" src={urlFor(article.image).url()} alt="image-article" /> */}
+      <ContentWrapper>
+          <img className="imgArt" src={urlFor(article.image).url()} alt="image-article" />
           <Content>
-            <h3>Hello</h3>
-            <h2>{article.Title}</h2>
-            <h3>{article.Author}</h3>
-            <p>{article.releaseDate}</p>
-            <p>{article.content}</p>
+            <Title>
+              <h2>{article.title}</h2>
+            </Title>
+            <Subtitle>
+              <h3>{article.author}</h3>
+              <p>{article.createdDate}</p>
+            </Subtitle>
+            <p>{article.description}</p>
           </Content>
-          <Line />
-        </ArticleWrapper>
-      </BlogWrapper>
+      </ContentWrapper>
     </motion.div>
   );
 }
 
 
 export async function getServerSideProps(context) {
-  const { id } = context.query;
-  const article = await loadData(id);
+  const { id } = context.params;
+  const article = await getArticle(id);
   console.log(id);
-  console.log("hello");
 
   return {
     props: {

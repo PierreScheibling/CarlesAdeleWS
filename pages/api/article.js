@@ -14,6 +14,13 @@ export async function loadData(start, end) {
   }
 }
 
+export async function getArticle(id) {
+  console.log(id)
+  const query = `*[_type == "article" && _id == "${id}"][0]`;
+  const article = await client.fetch(query);
+  return article;
+}
+
 const builder = imageUrlBuilder(client)
 
 export function urlFor(source) {

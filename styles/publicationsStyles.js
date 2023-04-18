@@ -49,7 +49,7 @@ export const ArticleWrapper = styled(motion.div)`
     justify-content: flex-start;
     text-align: justify;
     margin: 2rem 0 2rem 10rem;
-    height: 100%;
+    height: 15vh;
     width: 50%;
     position: relative;
     color: var(--grey);

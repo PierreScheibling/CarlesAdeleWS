@@ -1,11 +1,10 @@
 /* eslint-disable react/no-unescaped-entities */
-import {loadData, urlFor} from './api/article';
 import Link from 'next/link';
-import Image from 'next/image';
+import { loadData, urlFor } from './api/article';
 //Style
-import {BlogWrapper, ArticleWrapper, Title, Articles, Content, Line, TitleLine} from '../styles/publicationsStyles';
 import { motion } from 'framer-motion';
-import {pageAnimation, titlelineAnim, articlesAnim} from "../styles/animations";
+import { pageAnimation, titlelineAnim } from "../styles/animations";
+import { ArticleWrapper, Articles, BlogWrapper, Content, Line, Title, TitleLine } from '../styles/publicationsStyles';
 
 const LOAD_MORE_STEP = 4;
 
@@ -49,9 +48,9 @@ export default function Blog({articles, total}) {
                     <ArticleWrapper layout variants={articleAnim}>
                       <img className="imgArt" src={urlFor(article.image).url()} alt="image-article"/>
                       <Content>
-                        <h2>{article.Title}</h2>
-                        <h3>{article.Author}</h3>
-                        <p>{article.releaseDate}</p>
+                        <h2>{article.title}</h2>
+                        <h3>{article.author}</h3>
+                        <p>{article.createdDate}</p>
                         {/* <a href={`/article/${article._id}`}><p>En savoir plus</p></a> */}
                       </Content>
                       <Line/>
