@@ -86,11 +86,10 @@ export default {
     //   },
     // },
     {
-      name: 'description',
       title: 'Description',
+      name: 'description',
       type: 'array',
-      of: [{type: 'block'}, {type: 'image'}],
-      // validation: (Rule) => Rule.required(),
+      of: [{type: 'block'}],
     },
   ],
 }
