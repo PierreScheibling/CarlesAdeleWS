@@ -14,7 +14,7 @@ export default function Article({ article }) {
       animate="show"
     >
       <ContentWrapper>
-          <img className="imgArt" src={urlFor(article.image).url()} alt="image-article" />
+          {/* <img className="imgArt" src={urlFor(article.image).url()} alt="image-article" /> */}
           <Content>
             <Title>
               <h2>{article.title}</h2>
@@ -27,18 +27,16 @@ export default function Article({ article }) {
           </Content>
       </ContentWrapper>
     </motion.div>
-  );
+  )
 }
-
 
 export async function getServerSideProps(context) {
   const { id } = context.params;
   const article = await getArticle(id);
-  console.log(id);
 
   return {
     props: {
       article,
     },
-  };
+  }
 }

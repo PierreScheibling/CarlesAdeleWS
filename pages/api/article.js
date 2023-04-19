@@ -1,21 +1,20 @@
-import { client } from "@/lib/client";
-import imageUrlBuilder from '@sanity/image-url';
+import { client } from '@/lib/client'
+import imageUrlBuilder from '@sanity/image-url'
 
 export async function loadData(start, end) {
   const query = `{
     "articles": *[_type == "article"],
     "total": count(*[_type == "article"]),
-  }`;
+  }`
 
-  const { articles, total } = await client.fetch(query);
+  const { articles, total } = await client.fetch(query)
   return {
     articles,
-    total
+    total,
   }
 }
 
 export async function getArticle(id) {
-  console.log(id)
   const query = `*[_type == "article" && _id == "${id}"][0]`;
   const article = await client.fetch(query);
   return article;
@@ -24,5 +23,5 @@ export async function getArticle(id) {
 const builder = imageUrlBuilder(client)
 
 export function urlFor(source) {
-    return builder.image(source)
-  }
+  return builder.image(source)
+}
