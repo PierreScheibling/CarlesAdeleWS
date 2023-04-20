@@ -84,7 +84,7 @@ export const NavBarLinks = styled.ul`
         display: flex;
         justify-content: space-between;
         list-style: none;
-        font-size: clamp(0.4rem, 2.5vh, 12rem);
+        font-size: clamp(0.2rem, 2.5vh, 12rem);
         color: var(--greyblue);
     }
     @media (max-width: 850px) {

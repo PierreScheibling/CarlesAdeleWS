@@ -9,8 +9,6 @@ import {
   Line1,
   Line2,
 } from '../styles/indexStyles'
-import Image from 'next/image'
-import logoind from '../public/images/LogoAC.png'
 import { motion } from 'framer-motion'
 import {
   pageAnimation,
@@ -44,7 +42,6 @@ export default function Home() {
                 <LetterC variants={letterC}>C</LetterC>
                 <motion.h1 variants={avocatAnim}>AVOCAT</motion.h1>
               </Letters>
-              <Image className="imgInd" src={logoind} alt="logo" />
             </Link>
             <TextWrapper className="textInd">
               <motion.h1 variants={avocat2Anim}>
