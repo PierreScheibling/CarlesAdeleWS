@@ -15,6 +15,7 @@ export const pageAnimation = {
     transition: { ease: 'easeOut', duration: 0.5 },
   },
 }
+
 export const navAnimation = {
   hidden: {
     opacity: 0,
@@ -177,12 +178,11 @@ export const lineIndex = {
     transition: { duration: 1.1, delay: 0.6 },
   },
 }
-};
 
 export const toggleMenuAnim = {
-  hhidden: { opacity: 0},
+  hhidden: { opacity: 0 },
   show: {
     opacity: 1,
-    transition: { duration: 1},
+    transition: { duration: 1 },
   },
-};
+}

@@ -10,7 +10,7 @@ import {
 import Image from 'next/image'
 import logonav from '../../public/images/LogoAC.png'
 import { navAnimation } from '@/styles/animations'
-import {toggleMenuAnim} from "../../styles/animations";
+import { toggleMenuAnim } from '../../styles/animations'
 
 export default function Nav() {
   const [isOpen, setIsOpen] = useState(false)
@@ -25,8 +25,13 @@ export default function Nav() {
     <NavStyles variants={navAnimation} initial="hidden" animate="show">
       <Logo>
         <Link onClick={closeMenu} href={'/'}>
-          <Image className="imgNav" src={logonav} alt="logo"  width={200}
-      height={200}/>
+          <Image
+            className="imgNav"
+            src={logonav}
+            alt="logo"
+            width={200}
+            height={200}
+          />
           {/* <img src={logonav.src} alt="logo" /> */}
         </Link>
       </Logo>
@@ -36,10 +41,12 @@ export default function Nav() {
         <div></div>
       </MenuIcon>
       {isOpen && (
-        <MenuLinks variants={toggleMenuAnim}
-        exit="exit"
-        initial="hidden"
-        animate="show">
+        <MenuLinks
+          variants={toggleMenuAnim}
+          exit="exit"
+          initial="hidden"
+          animate="show"
+        >
           <li>
             <Link href={'/missions'} onClick={closeMenu}>
               ACCUEIL
