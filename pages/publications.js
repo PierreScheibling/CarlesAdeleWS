@@ -33,7 +33,6 @@ export default function Blog({ articles, total }) {
       },
     },
   }
-
   return (
     <motion.div
       variants={pageAnimation}
