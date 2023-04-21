@@ -11,6 +11,12 @@ export const SuccessContainer = styled(motion.div)`
     justify-content: space-evenly;
     font-family: "Poppins_light";
     color: var(--grey);
+    div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
     button {
         font-family: "Poppins_light";
         background: transparent;

@@ -22,13 +22,11 @@ export default function Article({
   content,
 }) {
   return (
-    <motion.div
+      <ContentWrapper
       variants={pageAnimation}
       exit="exit"
       initial="hidden"
-      animate="show"
-    >
-      <ContentWrapper>
+      animate="show">
         <img className="imgArt" src={urlFor(image).url()} alt="image-article" />
         <Content>
           <Title>
@@ -41,7 +39,6 @@ export default function Article({
           <PortableText value={description} />
         </Content>
       </ContentWrapper>
-    </motion.div>
   )
 }
 

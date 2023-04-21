@@ -14,7 +14,7 @@ export const Title = styled(motion.div)`
         font-family: "RoxboroughCF";
         font-weight: lighter;
         color: var(--greyblue);
-        font-size: clamp(0.5rem, 5vh, 15rem);
+        font-size: clamp(0.5rem, 9vh, 15rem);
     }
 `;
 
@@ -38,8 +38,8 @@ export const LeftSide = styled(motion.div)`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: flex-start;
-    height: 80%;
+    align-items: space-between;
+    height: 60vh;
     @media (max-width: 850px) {
         height: 100%;
         p {
@@ -115,11 +115,15 @@ export const Form = styled(motion.div)`
     input {
         padding: 1rem;
         border: 0.2px solid var(--greyblue);
-        border-radius: 0.5rem;
+        /* border-radius: 0.5rem; */
         width: 70%;
         margin-bottom: 1rem;
         font-family: "Poppins_light";
         color: var(--greyblue);
+        :focus {
+            outline: none !important;
+            border-color: var(--greyblue);
+        }
     }
     .message {
         flex-direction: column;
@@ -131,12 +135,16 @@ export const Form = styled(motion.div)`
             width: 100%;
             height: 8rem;
             margin-bottom: 1rem;
-            border-radius: 0.5rem;
+            /* border-radius: 0.5rem; */
             padding: 1rem;
             border: grey;
             font-family: "Poppins_light";
             border: 0.2px solid var(--greyblue);
             color: var(--greyblue);
+            :focus {
+            outline: none !important;
+            border-color: var(--greyblue);
+        }
         }
     }
     button {

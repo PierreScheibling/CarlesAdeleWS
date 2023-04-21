@@ -26,7 +26,7 @@ export const Title = styled(motion.div)`
         color: var(--grey);
         font-weight: lighter;
         margin-left: 3rem;
-        font-size: clamp(0.5rem, 7vh, 15rem);
+        font-size: clamp(0.5rem, 9vh, 15rem);
     }
     @media (max-width: 850px) {
         h1 {
