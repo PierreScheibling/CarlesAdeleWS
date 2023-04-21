@@ -4,9 +4,11 @@ import {motion} from "framer-motion"
 
 export const ContentWrapper = styled(motion.div)`
     display: flex;
+    width: 90%;
+    min-height: 85vh;
     flex-direction: column;
     align-content: center;
-    justify-content: center;
+    justify-content: flex-start;
     margin: 0 4rem;
     font-family: "Poppins_light";
     img {

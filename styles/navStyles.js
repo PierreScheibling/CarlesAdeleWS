@@ -1,6 +1,8 @@
 import styled from "styled-components";
+//Animation
+const {motion} = require("framer-motion");
 
-export const NavStyles = styled.div`
+export const NavStyles = styled(motion.div)`
     z-index: 10;
     min-height: 15vh;
     width: 100%;
@@ -16,26 +18,28 @@ export const NavStyles = styled.div`
         font-size: clamp(0.4rem, 2.5vh, 12rem);
         color: var(--greyblue);
     }
-    @media (max-width: 850px) {
+    @media (max-width: 950px) {
+        width: 95%;
         justify-content: space-between;
     }
 `;
 
-export const Logo = styled.div`
+export const Logo = styled(motion.div)`
     position: absolute;
     left: 0;
     height: 15vh;
     .imgNav{
             height: 15vh;
             width: 15vh;
-            object-fit: fill;
+            object-fit: cover;
         }
-    @media (max-width: 850px) {
+    @media (max-width: 950px) {
         position: relative;
+        left: 5%;
     }
 `;
 
-export const MenuIcon = styled.div`
+export const MenuIcon = styled(motion.div)`
     display: none;
     cursor: pointer;
     div {
@@ -45,7 +49,7 @@ export const MenuIcon = styled.div`
         background-color: var(--greyblue);
     }
 
-    @media (max-width: 850px) {
+    @media (max-width: 950px) {
         display: flex;
         flex-direction: column;
         /* align-items: center;
@@ -54,11 +58,11 @@ export const MenuIcon = styled.div`
     }
 `;
 
-export const MenuLinks = styled.ul`
+export const MenuLinks = styled(motion.ul)`
     display: none;
     justify-content: center;
     align-items: center;
-    @media (max-width: 850px) {
+    @media (max-width: 950px) {
         width: 100%;
         display: flex;
         position: absolute;
@@ -78,7 +82,7 @@ export const MenuLinks = styled.ul`
     }
 `;
 
-export const NavBarLinks = styled.ul`
+export const NavBarLinks = styled(motion.ul)`
     width: 80%;
     ul {
         display: flex;
@@ -87,7 +91,7 @@ export const NavBarLinks = styled.ul`
         font-size: clamp(0.2rem, 2.5vh, 12rem);
         color: var(--greyblue);
     }
-    @media (max-width: 850px) {
+    @media (max-width: 950px) {
         display: none;
     }
 `;

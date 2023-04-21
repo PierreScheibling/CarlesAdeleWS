@@ -42,7 +42,7 @@ export default function Blog({ articles, total }) {
       animate="show"
     >
       <BlogWrapper>
-        <Title>
+        <Title >
           <h1>PUBLICATIONS</h1>
           <TitleLine
             variants={titlelineAnim}
@@ -55,7 +55,7 @@ export default function Blog({ articles, total }) {
           layout
           variants={articlesAnim}
           initial="hidden"
-          animate="show"
+          animate="show" 
         >
           {articles.map((article, index) => (
             <div key={index}>

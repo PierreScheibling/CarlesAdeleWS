@@ -168,3 +168,11 @@ export const lineIndex = {
     transition: { duration: 1.1, delay: 0.6 },
   },
 };
+
+export const toggleMenuAnim = {
+  hhidden: { opacity: 0},
+  show: {
+    opacity: 1,
+    transition: { duration: 1},
+  },
+};

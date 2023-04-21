@@ -33,7 +33,7 @@ export const LeftSide = styled(motion.div)`
         margin-top: 1rem;
         font-family: "RoxboroughCF";
         color: var(--greyblue);
-        font-size: clamp(0.5rem, 10vh, 15rem);
+        font-size: clamp(0.5rem, 9vh, 15rem);
         font-weight: lighter;
     }
     @media (max-width: 850px) {
@@ -60,7 +60,7 @@ export const RightSide = styled(motion.div)`
     p {
         font-size: clamp(0.3rem, 2vh, 8rem);
         font-family: "Poppins_light";
-        margin: 0.7rem 0;
+        margin: 0.6rem 0;
         color: var(--grey);
     }
     li {

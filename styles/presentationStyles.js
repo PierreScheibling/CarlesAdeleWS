@@ -65,7 +65,7 @@ export const Name = styled(motion.div)`
   h1 {
     font-family: "RoxboroughCF";
     font-weight: lighter;
-    font-size: clamp(1.5rem,  6vw, 10rem);
+    font-size: clamp(0.6rem,  6vw, 10rem);
     color: var(--grey);
   }
   @media (max-width: 850px) {

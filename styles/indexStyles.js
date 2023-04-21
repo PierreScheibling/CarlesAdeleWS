@@ -34,7 +34,7 @@ export const TextWrapper = styled(motion.div)`
     width: 80%;
     height: 30vh;
     h1{
-        font-size: clamp(0.5rem, 4vh, 12rem);
+        font-size: clamp(0.3rem, 4vh, 12rem);
         padding: 2rem;
     }
     @media (max-width: 850px) {

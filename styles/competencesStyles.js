@@ -54,6 +54,7 @@ export const Section = styled(motion.div)`
     height: 100%;
     width: 40%;
     padding: 0 1rem;
+    margin-bottom: 1rem;
     .imgSection {
         width: 100%;
         height: 35vh;
@@ -62,7 +63,6 @@ export const Section = styled(motion.div)`
     }
     @media (max-width: 850px) {
         width: 100%;
-        height: 50%;
         .imgSection {
         width: 100%;
         height: 15vh;
@@ -74,7 +74,7 @@ export const Section = styled(motion.div)`
 
 export const Text = styled(motion.div)`
     background-color: white;
-    height: 50vh;
+    height: 100%;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -92,7 +92,7 @@ export const Text = styled(motion.div)`
         font-size: clamp(0.3rem, 2.3vh, 8rem);
     }
     @media (max-width: 850px) {
-        height: 20vh;
+        /* height: 20vh; */
         align-items: flex-start;
         h2 {
             margin: 1rem 0 1rem 0.5rem;
