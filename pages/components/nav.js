@@ -9,6 +9,7 @@ import {
 } from '../../styles/navStyles'
 import Image from 'next/image'
 import logonav from '../../public/images/LogoAC.png'
+import { navAnimation } from '@/styles/animations'
 
 export default function Nav() {
   const [isOpen, setIsOpen] = useState(false)
@@ -20,7 +21,7 @@ export default function Nav() {
   }
 
   return (
-    <NavStyles>
+    <NavStyles variants={navAnimation} initial="hidden" animate="show">
       <Logo>
         <Link onClick={closeMenu} href={'/'}>
           <Image className="imgNav" src={logonav} alt="logo" />
