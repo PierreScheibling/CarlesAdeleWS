@@ -11,6 +11,7 @@ export const ContentWrapper = styled(motion.div)`
     justify-content: flex-start;
     margin: 0 4rem;
     font-family: "Poppins_light";
+    color: var(--black);
     img {
         width: 100%;
         object-fit: cover;
