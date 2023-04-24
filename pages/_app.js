@@ -30,8 +30,8 @@ export default function App({ Component, pageProps, router }) {
   return (
     <>
       <Head>
-        <title>AC Avocat</title>
-        <meta name="description" content="Site Web du cabinet AC Avocat" />
+        <title>Carles Avocat</title>
+        <meta name="description" content="Site Web du cabinet Carles Avocat" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
