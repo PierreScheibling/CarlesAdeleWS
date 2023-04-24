@@ -94,8 +94,8 @@ export default {
   ],
   orderings: [
     {
-      title: 'Created Date, New',
-      name: 'rcreatedDate',
+      title: 'Date de création',
+      name: 'createdDateDesc',
       by: [
         {field: 'createdDate', direction: 'desc'}
       ]
