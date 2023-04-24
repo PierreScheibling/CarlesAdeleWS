@@ -92,4 +92,13 @@ export default {
       of: [{type: 'block'}],
     },
   ],
+  orderings: [
+    {
+      title: 'Created Date, New',
+      name: 'rcreatedDate',
+      by: [
+        {field: 'createdDate', direction: 'asc'}
+      ]
+    },
+  ]
 }
