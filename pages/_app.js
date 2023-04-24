@@ -5,6 +5,7 @@ import { AnimatePresence } from 'framer-motion'
 import { useState, useEffect } from 'react'
 import Loading from './loading'
 import Router from 'next/router'
+import Head from 'next/head'
 
 export default function App({ Component, pageProps, router }) {
   const [loading, setLoading] = useState(false)
@@ -27,14 +28,22 @@ export default function App({ Component, pageProps, router }) {
   }, [])
 
   return (
-    <AnimatePresence>
-      <Nav key="nav" />
-      {loading ? (
-        <Loading />
-      ) : (
-        <Component key={router.pathname} {...pageProps} />
-      )}
-      <Footer key="footer" />
-    </AnimatePresence>
+    <>
+      <Head>
+        <title>AC Avocat</title>
+        <meta name="description" content="Site Web du cabinet AC Avocat" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+      <AnimatePresence>
+        <Nav key="nav" />
+        {loading ? (
+          <Loading />
+        ) : (
+          <Component key={router.pathname} {...pageProps} />
+        )}
+        <Footer key="footer" />
+      </AnimatePresence>
+    </>
   )
 }

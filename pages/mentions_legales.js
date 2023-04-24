@@ -23,7 +23,7 @@ export default function Mention() {
                             <li><p>Propriétaire du site : Adèle CARLES – Contact : contact@ac-avocat.fr 06 60 67 95 95 – Adresse : 52 rue des Remparts - 33000 BORDEAUX.</p></li>
                             <li><p>Identification de l’entreprise : Adèle CARLES : – Adresse postale : 52 rue des Remparts - 33000 BORDEAUX.</p></li>
                             <li><p>Directeur de la publication : – Contact : Adèle CARLES </p></li>
-                            <li><p>Hébergeur : /// </p></li>
+                            <li><p>Hébergeur : OVH </p></li>
                             <li><p>Délégué à la protection des données : contact@ac-avocat.fr</p></li>
                             <li><p>Autres contributeurs : Site web réalisé par <a href={"https://scheibling.netlify.app/"} target="_blank">Pierre SCHEIBLING</a>.</p></li>
                         </ul>
