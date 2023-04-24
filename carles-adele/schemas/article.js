@@ -97,7 +97,7 @@ export default {
       title: 'Created Date, New',
       name: 'rcreatedDate',
       by: [
-        {field: 'createdDate', direction: 'asc'}
+        {field: 'createdDate', direction: 'desc'}
       ]
     },
   ]
