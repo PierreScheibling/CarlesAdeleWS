@@ -5,7 +5,7 @@ import {LoadingWrapper} from '../styles/loadingStyles';
 export default function Loading() {
   return (
     <LoadingWrapper>
-      <h1>Chargement de la page ...</h1>
+      <h2>Chargement de la page ...</h2>
     </LoadingWrapper>
   )
 }

@@ -4,7 +4,6 @@ import {motion} from "framer-motion"
 
 export const ContentWrapper = styled(motion.div)`
     display: flex;
-    width: 90%;
     min-height: 85vh;
     flex-direction: column;
     align-content: center;
@@ -13,15 +12,21 @@ export const ContentWrapper = styled(motion.div)`
     font-family: "Poppins_light";
     color: var(--black);
     img {
-        width: 100%;
+        /* width: 100%; */
         object-fit: cover;
         height: 30vh;
+    }
+    @media (max-width: 850px) {
+        margin: 0 2rem;
     }
 `;
 
 export const Content = styled(motion.div)`
     p {
         margin: 1rem 0;
+    }
+    div {
+        width: 100%;
     }
 `;
 

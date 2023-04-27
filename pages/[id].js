@@ -36,7 +36,9 @@ export default function Article({
             <h3>{author}</h3>
             <p>{createdDate}</p>
           </Subtitle>
-          <PortableText value={description} />
+          <div>
+            <PortableText value={description} />
+          </div>
         </Content>
       </ContentWrapper>
   )
