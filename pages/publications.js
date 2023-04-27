@@ -64,6 +64,7 @@ export default function Blog({ articles, total }) {
                     className="imgArt"
                     src={urlFor(article.image).url()}
                     alt="image-article"
+                    quality="50"
                   />
                   <Content>
                     <h2>{article.title}</h2>

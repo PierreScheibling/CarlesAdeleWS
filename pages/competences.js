@@ -40,6 +40,7 @@ export default function Expertise() {
                 className="imgSection"
                 src={imgFisca}
                 alt="image-section"
+                quality="50"
               />
               <Text
                 variants={expertiseTitleAnim}
@@ -71,7 +72,7 @@ export default function Expertise() {
               </Text>
             </Section>
             <Section>
-              <Image className="imgSection" src={imgAff} alt="image-section" />
+              <Image className="imgSection" src={imgAff} alt="image-section" quality="50"/>
               <Text
                 Text
                 variants={expertiseTitleAnim}

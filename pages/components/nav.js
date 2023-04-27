@@ -31,6 +31,7 @@ export default function Nav() {
             alt="logo"
             width={200}
             height={200}
+            quality="50"
           />
           {/* <img src={logonav.src} alt="logo" /> */}
         </Link>

@@ -20,7 +20,7 @@ export default function Presentation() {
                         <h1>Adèle</h1>
                         <h1>Carles</h1>
                     </Name>
-                    <Image className="photoAdCl" src={photoAd} alt="photo-adèle"/>
+                    <Image className="photoAdCl" src={photoAd} alt="photo-adèle" quality="50"/>
                 </LeftSide>
                 <RightSide>
                     <motion.p layout
