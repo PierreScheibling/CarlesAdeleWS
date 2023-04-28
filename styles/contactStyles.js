@@ -19,7 +19,7 @@ export const Title = styled(motion.div)`
     @media (max-width: 850px) {
         h1 {
             font-size: clamp(0.5rem, 7vh, 15rem);
-        }
+        };
     }
 `;
 
