@@ -33,6 +33,9 @@ export default function Blog({ articles, total }) {
       },
     },
   }
+
+  articles.sort((a, b) => new Date(b.createdDate) - new Date(a.createdDate));
+
   return (
     <motion.div
       variants={pageAnimation}
@@ -75,7 +78,7 @@ export default function Blog({ articles, total }) {
                 </ArticleWrapper>
               </Link>
             </div>
-          )).sort().reverse()}
+          ))}
         </Articles>
       </BlogWrapper>
     </motion.div>
