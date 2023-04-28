@@ -26,6 +26,16 @@ export const navAnimation = {
   },
 }
 
+export const footerAnimation = {
+  hidden: {
+    opacity: 0,
+  },
+  show: {
+    opacity: 1,
+    transition: { ease: 'easeInOut', duration: 1},
+  },
+}
+
 export const articlesAnim = {
   hidden: {
     opacity: 0,

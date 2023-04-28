@@ -1,9 +1,10 @@
 import Link from "next/link";
 import { FooterStyles, Line, Annexes, Copywright } from "../../styles/footerStyles";
+import { footerAnimation } from '@/styles/animations';
 
 export default function Footer() {
     return (
-        <FooterStyles>
+        <FooterStyles variants={footerAnimation} initial="hidden" animate="show">
             <Line/>
             <Annexes>
                 <h3>

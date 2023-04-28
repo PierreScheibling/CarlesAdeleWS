@@ -1,6 +1,7 @@
 import styled from "styled-components";
+import { motion } from 'framer-motion';
 
-export const FooterStyles = styled.div`
+export const FooterStyles = styled(motion.div)`
     z-index: 10;
     display: flex;
     flex-direction: column;
@@ -16,7 +17,7 @@ export const FooterStyles = styled.div`
     }
 `;
 
-export const Line = styled.div`
+export const Line = styled(motion.div)`
     position: absolute;
     top: 0;
     height: 0.1rem;
@@ -24,14 +25,14 @@ export const Line = styled.div`
     background: var(--bluelight);
 `;
 
-export const Annexes = styled.div`
+export const Annexes = styled(motion.div)`
     display: flex;
     justify-content: space-between;
     margin-bottom: 1rem;
 
 `;
 
-export const Copywright = styled.div`
+export const Copywright = styled(motion.div)`
     span {
         font-size: clamp(0.3rem, 1.8vh, 8rem);;
     }

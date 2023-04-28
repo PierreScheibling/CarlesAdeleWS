@@ -75,7 +75,7 @@ export default function Blog({ articles, total }) {
                 </ArticleWrapper>
               </Link>
             </div>
-          ))}
+          )).sort().reverse()}
         </Articles>
       </BlogWrapper>
     </motion.div>
