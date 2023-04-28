@@ -27,7 +27,7 @@ export default function Article({
       exit="exit"
       initial="hidden"
       animate="show">
-        <img className="imgArt" src={urlFor(image).url()} alt="image-article" />
+        <img className="imgArt" src={urlFor(image).url()} alt={title} />
         <Content>
           <Title>
             <h2>{title}</h2>

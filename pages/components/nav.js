@@ -28,12 +28,11 @@ export default function Nav() {
           <Image
             className="imgNav"
             src={logonav}
-            alt="logo"
+            alt="Logo du cabinet d'Adèle Carles, avocate spécialisée en droit des affaires et fiscalité"
             width={200}
             height={200}
             quality="50"
           />
-          {/* <img src={logonav.src} alt="logo" /> */}
         </Link>
       </Logo>
       <MenuIcon onClick={toggleMenu}>

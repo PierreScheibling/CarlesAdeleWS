@@ -39,7 +39,7 @@ export default function Expertise() {
               <Image
                 className="imgSection"
                 src={imgFisca}
-                alt="image-section"
+                alt="Illustration de la section Fiscalité du cabinet d'Adèle Carles, avocate spécialisée en droit des affaires et fiscalité"
                 quality="50"
               />
               <Text
@@ -72,7 +72,7 @@ export default function Expertise() {
               </Text>
             </Section>
             <Section>
-              <Image className="imgSection" src={imgAff} alt="image-section" quality="50"/>
+              <Image className="imgSection" src={imgAff} alt="Illustration de la partie Droit des affaires du cabinet d'Adèle Carles, avocate spécialisée en droit des affaires et fiscalité" quality="50"/>
               <Text
                 Text
                 variants={expertiseTitleAnim}
