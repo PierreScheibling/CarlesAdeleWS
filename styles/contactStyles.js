@@ -16,6 +16,11 @@ export const Title = styled(motion.div)`
         color: var(--greyblue);
         font-size: clamp(0.5rem, 9vh, 15rem);
     }
+    @media (max-width: 850px) {
+        h1 {
+            font-size: clamp(0.5rem, 7vh, 15rem);
+        }
+    }
 `;
 
 export const Content = styled(motion.div)`
@@ -30,6 +35,7 @@ export const Content = styled(motion.div)`
         height: 100%;
         align-items: center;
         margin-top: 1rem;
+        width: 100%;
     }
 `;
 
