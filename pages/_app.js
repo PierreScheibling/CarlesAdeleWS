@@ -30,8 +30,8 @@ export default function App({ Component, pageProps, router }) {
   return (
     <>
       <Head>
-        <title>Cabinet d&apos;avocat Adèle Carles - Expertise en droit des affaires pour entreprises et particuliers</title>
-        <meta name="description" content="Le cabinet d'avocat Adèle Carles offre une expertise pointue en droit des affaires et fiscalité pour entreprises et particuliers. Le Cabinet propose un support permanent afin de répondre à l’ensemble des problématiques fiscales et juridiques auxquelles vous vous trouvez confrontés. Les réponses données tiennent compte de l’environnement juridique, des contraintes de l’activité et de la stratégie de l’entreprise. Contactez Maître Carles dès aujourd'hui pour une consultation confidentielle et professionnelle en droit des affaires." />
+        <title>Cabinet d&apos;avocat Adèle Carles</title>
+        <meta name="description" content="Le cabinet d'avocat Adèle Carles offre une expertise pointue en droit des affaires et fiscalité pour entreprises et particuliers." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
