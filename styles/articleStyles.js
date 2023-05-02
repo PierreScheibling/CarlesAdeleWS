@@ -14,7 +14,7 @@ export const ContentWrapper = styled(motion.div)`
     img {
         /* width: 100%; */
         object-fit: cover;
-        height: 30vh;
+        height: 35vh;
     }
     @media (max-width: 850px) {
         margin: 0 2rem;
