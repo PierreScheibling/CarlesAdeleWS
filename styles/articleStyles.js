@@ -25,6 +25,9 @@ export const Content = styled(motion.div)`
     p {
         margin: 1rem 0;
     }
+    p strong {
+        font-family: "Poppins_bold";
+    }
     div {
         width: 100%;
     }
