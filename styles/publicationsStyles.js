@@ -49,8 +49,8 @@ export const ArticleWrapper = styled(motion.div)`
     justify-content: flex-start;
     text-align: justify;
     margin: 2rem 0 2rem 10rem;
-    height: 15vh;
-    width: 50%;
+    /* height: 15vh; */
+    width: 80%;
     position: relative;
     color: var(--grey);
     cursor: pointer;
@@ -80,15 +80,21 @@ export const Articles = styled(motion.div)`
 export const Content = styled(motion.div)`
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: space-between;
     padding-left: 1.5rem;
     font-family: "TTDrugs";
-    line-height: 170%;
+    line-height: 150%;
     h2 {
         font-weight: bolder;
     }
+    div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1rem;
+    }
     @media (max-width: 850px) {
-        line-height: 150%;
+        /* line-height: 150%; */
         padding-left: 1rem;
     }
 `;

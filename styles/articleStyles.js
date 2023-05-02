@@ -40,4 +40,5 @@ export const Title = styled(motion.div)`
 export const Subtitle = styled(motion.div)`
     display: flex;
     justify-content: space-between;
+    align-items: center;
 `;

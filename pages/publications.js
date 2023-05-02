@@ -71,8 +71,10 @@ export default function Blog({ articles, total }) {
                   />
                   <Content>
                     <h2>{article.title}</h2>
-                    <h3>{article.author}</h3>
-                    <p>{article.createdDate}</p>
+                    <div>
+                      <h3>{article.author}</h3>
+                      <p>{article.createdDate}</p>
+                    </div>
                   </Content>
                   <Line />
                 </ArticleWrapper>
