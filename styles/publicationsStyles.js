@@ -84,6 +84,7 @@ export const Content = styled(motion.div)`
     padding-left: 1.5rem;
     font-family: "TTDrugs";
     line-height: 150%;
+    width: 100%;
     h2 {
         font-weight: bolder;
     }
