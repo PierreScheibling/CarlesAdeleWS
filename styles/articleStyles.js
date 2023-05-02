@@ -28,6 +28,10 @@ export const Content = styled(motion.div)`
     div {
         width: 100%;
     }
+    li {
+        font-size: clamp(0.6rem, 1.8vh, 8rem);
+        margin-left: 1rem;
+    }
 `;
 
 export const Title = styled(motion.div)`
