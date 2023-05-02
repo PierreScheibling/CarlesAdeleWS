@@ -96,5 +96,14 @@ export const Content = styled(motion.div)`
     @media (max-width: 850px) {
         /* line-height: 150%; */
         padding-left: 1rem;
+        h2 {
+            text-align: left;
+            font-size: clamp(0.5rem, 1.7vh, 12rem);
+        }
+        div {
+            p {
+                font-size: clamp(0.3rem, 1.5vh, 8rem);
+            }
+        }
     }
 `;

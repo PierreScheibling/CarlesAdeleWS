@@ -72,7 +72,7 @@ export default function Blog({ articles, total }) {
                   <Content>
                     <h2>{article.title}</h2>
                     <div>
-                      <h3>{article.author}</h3>
+                      <p>{article.author}</p>
                       <p>{article.createdDate}</p>
                     </div>
                   </Content>
