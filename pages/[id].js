@@ -22,25 +22,26 @@ export default function Article({
   content,
 }) {
   return (
-      <ContentWrapper
+    <ContentWrapper
       variants={pageAnimation}
       exit="exit"
       initial="hidden"
-      animate="show">
-        <img className="imgArt" src={urlFor(image).url()} alt={title} />
-        <Content>
-          <Title>
-            <h2>{title}</h2>
-          </Title>
-          <Subtitle>
-            <h3>{author}</h3>
-            <p>{createdDate}</p>
-          </Subtitle>
-          <div>
-            <PortableText value={description} />
-          </div>
-        </Content>
-      </ContentWrapper>
+      animate="show"
+    >
+      <img className="imgArt" src={urlFor(image).url()} alt={title} />
+      <Content>
+        <Title>
+          <h2>{title}</h2>
+        </Title>
+        <Subtitle>
+          <h3>{author}</h3>
+          <p>{createdDate}</p>
+        </Subtitle>
+        <div>
+          <PortableText value={description} />
+        </div>
+      </Content>
+    </ContentWrapper>
   )
 }
 
@@ -52,7 +53,7 @@ export async function getStaticPaths() {
   }))
 
   // { fallback: false } means other routes should 404
-  return { paths, fallback: false }
+  return { paths, fallback: 'blocking' }
 }
 
 export async function getStaticProps({ params }) {
