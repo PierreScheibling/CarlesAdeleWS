@@ -41,7 +41,7 @@ export default function Contact() {
                             <div>
                                 <h3>ADRESSE</h3>
                                 <a href="https://goo.gl/maps/wfnwW37DVYsRBKqCA" target="_blank">
-                                <p>52 rue des Remparts</p>
+                                <p>48 rue Thiac</p>
                                 <p>33000 BORDEAUX</p>
                                 </a>
                             </div>
